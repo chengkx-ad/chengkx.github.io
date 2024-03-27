@@ -34,8 +34,8 @@
     
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#30aecf","title":"lalayouyi'blog","author":"youyi","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/","archives":"/archives"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#30aecf","title":"lalayouyi'blog","author":"youyi","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","CSDN":"https://blog.csdn.net/m0_63398413?spm=1000.2115.3001.5343 || fa-solid fa-tags"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -47,6 +47,9 @@
 <div class="progress-bar-container">
     
 
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
     
 </div>
 
@@ -84,6 +87,8 @@
                                href="/"
                             >
                                 
+                                    <i class="menu-icon fa-solid fa-home"></i>
+                                
                                 HOME
                             </a>
                         </li>
@@ -94,14 +99,34 @@
                                href="/archives"
                             >
                                 
+                                    <i class="menu-icon fa-solid fa-box-archive"></i>
+                                
                                 ARCHIVES
                             </a>
                         </li>
                     
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://blog.csdn.net/m0_63398413?spm=1000.2115.3001.5343"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-tags"></i>
+                                
+                                CSDN
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas search fa-search"></i>
+                        </li>
                     
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -125,6 +150,13 @@
                     <a class=""
                        href="/archives"
                     >ARCHIVES</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://blog.csdn.net/m0_63398413?spm=1000.2115.3001.5343"
+                    >CSDN</a>
                 </li>
             
         </ul>
@@ -184,17 +216,26 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Wed Mar 27 2024 21:32:29 GMT+0800">2024-03-27 21:32:29</span>
+                <span class="datetime" data-updated="Wed Mar 27 2024 22:13:27 GMT+0800">2024-03-27 22:13:27</span>
             </span>
         
 
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a></li>
+                        
+                    
+                </ul>
+            </span>
         
 
         
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Hexo/">Hexo</a></li>
                         
                     
                 </ul>
@@ -203,7 +244,19 @@
 
         
         
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1k Words</span>
+            </span>
         
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>3 Mins</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
         
     </div>
 
@@ -331,13 +384,36 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">我的博客</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Hexo/">Hexo</a>
                                     </li>
                                 
                             </ul>
                         
                     </div>
                     <div>
+                        
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="Share to WeChat"
+            data-tooltip-img-tip="Scan by WeChat"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="Share to WeiBo"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
+
                         
                     </div>
                 </div>
@@ -380,6 +456,15 @@
         </div>
 
         
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1%EF%BC%9A%E5%AE%89%E8%A3%85Node-js%E5%92%8CGit"><span class="nav-text">Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEHexo"><span class="nav-text">Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step3%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text">Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step4%EF%BC%9A%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github-Pages%E4%B8%8A"><span class="nav-text">Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A1%E9%85%8D%E7%BD%AESSH%E5%AF%86%E9%92%A5"><span class="nav-text">②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A2%E5%9C%A8Github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text">③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A3%E6%B5%8B%E8%AF%95"><span class="nav-text">④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A4%E9%85%8D%E7%BD%AEGit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text">⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A5%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84Hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0Github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text">⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A6%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text">⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step5%EF%BC%9A%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text">Step5：发表文章</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
     </div>
 </div>
 
@@ -394,7 +479,7 @@
     <div class="border-box website-info-box default">
         
             <div class="copyright-info info-item default">
-                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                &copy;&nbsp;<span>2024</span>&nbsp;-&nbsp;2024
                 
                     &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">youyi</a>
                 
@@ -411,9 +496,24 @@
 
         <div class="count-item info-item default">
             
-
+                <span class="count-box border-box word">
+                    <span class="item-type border-box">Total words</span>
+                    <span class="item-value border-box word">1.1k</span>
+                </span>
             
 
+            
+                <span class="count-box border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-box border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
             
         </div>
     </div>
@@ -428,6 +528,10 @@
             <div class="post-tools-container border-box">
     <ul class="tools-list border-box">
         <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
         
 
         <!-- PC go comment -->
@@ -469,6 +573,10 @@
 
     <ul class="exposed-tools-list border-box">
         
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
 
         
 
@@ -493,8 +601,48 @@
 
     <!-- local search -->
     
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
     <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1%EF%BC%9A%E5%AE%89%E8%A3%85Node-js%E5%92%8CGit"><span class="nav-text">Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEHexo"><span class="nav-text">Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step3%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text">Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step4%EF%BC%9A%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github-Pages%E4%B8%8A"><span class="nav-text">Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A1%E9%85%8D%E7%BD%AESSH%E5%AF%86%E9%92%A5"><span class="nav-text">②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A2%E5%9C%A8Github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text">③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A3%E6%B5%8B%E8%AF%95"><span class="nav-text">④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A4%E9%85%8D%E7%BD%AEGit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text">⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A5%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84Hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0Github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text">⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A6%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text">⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step5%EF%BC%9A%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text">Step5：发表文章</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
     
 </main>
 
@@ -519,11 +667,15 @@
 
 <!-- local-search -->
 
+    
+<script src="/js/local-search.js"></script>
+
+
 
 <!-- lazyload -->
 
 
-<div class="">
+<div class="pjax">
     
         <!-- post-helper -->
         
@@ -532,11 +684,19 @@
 
         <!-- toc -->
         
+            
+<script src="/js/post/toc.js"></script>
+
+        
 
         <!-- copyright-info -->
         
 
         <!-- share -->
+        
+            
+<script src="/js/post/share.js"></script>
+
         
     
 
@@ -557,6 +717,39 @@
 
 
 <!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
 
 
 
