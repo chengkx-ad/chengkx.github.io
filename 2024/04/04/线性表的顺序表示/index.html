@@ -216,7 +216,7 @@
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Thu Apr 04 2024 21:42:09 GMT+0800">2024-04-04 21:42:09</span>
+                <span class="datetime" data-updated="Thu Apr 04 2024 21:49:51 GMT+0800">2024-04-04 21:49:51</span>
             </span>
         
 
@@ -245,7 +245,7 @@
         
         
             <span class="meta-info-item post-wordcount">
-                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.3k Words</span>
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>1.4k Words</span>
             </span>
         
         
@@ -272,87 +272,61 @@
                     
 
                     <ol>
-<li>
-<p>从顺序表中删除具有最小值的元素（假设唯一）并由函数返回被删元素的值。空出的位置由最后一个元素填补，若顺序表为空，则显示出错信息并退出运行。</p>
+<li><p>从顺序表中删除具有最小值的元素（假设唯一）并由函数返回被删元素的值。空出的位置由最后一个元素填补，若顺序表为空，则显示出错信息并退出运行。</p>
 <ul>
-<li>
-<p><code>算法思想</code>：搜索整个顺序表，查找最小值元素并记住其位置，搜索结束后用最后一个元素填补空出的原最小值元素的位置，最后顺序表长度-1。</p>
+<li><p><code>算法思想</code>：搜索整个顺序表，查找最小值元素并记住其位置，搜索结束后用最后一个元素填补空出的原最小值元素的位置，最后顺序表长度-1。</p>
 </li>
-<li>
-<p><code>代码</code></p>
-  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//删除顺序表L中最小元素结点，并通过引用型参数value返回其值</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Del_Min</span><span class="params">(SqList &amp;L,ElemType &amp;value)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(L.length==<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> flase;</span><br><span class="line">    value=L.data[<span class="number">0</span>];</span><br><span class="line">    <span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;L.length;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]&lt;value)</span><br><span class="line">        &#123;</span><br><span class="line">            value=L.data[i];</span><br><span class="line">            pos=i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    L.data[pos]=L.data[L.length<span class="number">-1</span>];</span><br><span class="line">    L.length--;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li><p><code>代码</code></p>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//删除顺序表L中最小元素结点，并通过引用型参数value返回其值</span></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Del_Min</span><span class="params">(SqList &amp;L,ElemType &amp;value)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(L.length==<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> flase;</span><br><span class="line">    value=L.data[<span class="number">0</span>];</span><br><span class="line">    <span class="type">int</span> pos=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;L.length;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]&lt;value)</span><br><span class="line">        &#123;</span><br><span class="line">            value=L.data[i];</span><br><span class="line">            pos=i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    L.data[pos]=L.data[L.length<span class="number">-1</span>];</span><br><span class="line">    L.length--;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>
-<p>设计一个高效算法，将顺序表L的所有元素逆置，要求算法的空间复杂度为O(1)。</p>
+<li><p>设计一个高效算法，将顺序表L的所有元素逆置，要求算法的空间复杂度为O(1)。</p>
 <ul>
-<li>
-<p><code>算法思想</code>：扫描顺序表L的前半部分元素，对于元素<code>L.data[i]</code>将其与后半部分的对应元素<code>L.data[L.length-i-1]</code>进行交换。</p>
+<li><p><code>算法思想</code>：扫描顺序表L的前半部分元素，对于元素<code>L.data[i]</code>将其与后半部分的对应元素<code>L.data[L.length-i-1]</code>进行交换。</p>
 </li>
-<li>
-<p><code>代码</code></p>
-  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Reverse</span><span class="params">(SqList &amp;L)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ElemType temp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;L.length/<span class="number">2</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        temp=L.data[i];</span><br><span class="line">        L.data[i]=L.data[L.length-i<span class="number">-1</span>];</span><br><span class="line">        L.data[L.length-i<span class="number">-1</span>]=temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li><p><code>代码</code></p>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Reverse</span><span class="params">(SqList &amp;L)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ElemType temp;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;L.length/<span class="number">2</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        temp=L.data[i];</span><br><span class="line">        L.data[i]=L.data[L.length-i<span class="number">-1</span>];</span><br><span class="line">        L.data[L.length-i<span class="number">-1</span>]=temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>
-<p>对长度为n的顺序表L，编写一个时间复杂度为O(n)、空间复杂度为O(1)的算法，该算法删除顺序表中所有值为x的数据元素。</p>
+<li><p>对长度为n的顺序表L，编写一个时间复杂度为O(n)、空间复杂度为O(1)的算法，该算法删除顺序表中所有值为x的数据元素。</p>
 <ul>
-<li>
-<p><code>算法思想</code>：</p>
+<li><p><code>算法思想</code>：</p>
 <ul>
 <li>法①：用k记录顺序表L中不等于x的元素个数（即需要保存的元素个数），扫描时将不等于x的元素移动到下标k的位置，并更新k值。扫描结束后修改L的长度。</li>
 <li>法②：用k记录顺序表L中等于x的元素个数，一遍扫描L，一遍统计k，并将不等于x的元素前移k个元素。扫描结束后修改L的长度。</li>
 </ul>
 </li>
-<li>
-<p><code>代码</code></p>
-  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Del_x_1</span><span class="params">(SqList &amp;L,ElemType x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;L.length;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]!=x)</span><br><span class="line">        &#123;</span><br><span class="line">            L.data[k]=L.data[i];</span><br><span class="line">            k++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    L.length=k;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Del_x_2</span><span class="params">(SqList &amp;L,ElemType x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;L.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]==x)</span><br><span class="line">        	k++;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            L.data[i-k]=L.data[i];</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    L.length=L.length-k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li><p><code>代码</code></p>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Del_x_1</span><span class="params">(SqList &amp;L,ElemType x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;L.length;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]!=x)</span><br><span class="line">        &#123;</span><br><span class="line">            L.data[k]=L.data[i];</span><br><span class="line">            k++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    L.length=k;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Del_x_2</span><span class="params">(SqList &amp;L,ElemType x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;L.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]==x)</span><br><span class="line">        	k++;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            L.data[i-k]=L.data[i];</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    L.length=L.length-k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>
-<p>从顺序表中删除其值在给定值s和t之间（包含s和t，要求s&lt;t）的所有元素，若s或t不合理或顺序表为空，则显示出错信息并退出运行。</p>
+<li><p>从顺序表中删除其值在给定值s和t之间（包含s和t，要求s&lt;t）的所有元素，若s或t不合理或顺序表为空，则显示出错信息并退出运行。</p>
 <ul>
-<li>
-<p><code>算法思想</code>：本题和第3题基本思路一样，只不过是判断条件不太一样。这里以法②思想为例。</p>
+<li><p><code>算法思想</code>：本题和第3题基本思路一样，只不过是判断条件不太一样。这里以法②思想为例。</p>
 </li>
-<li>
-<p><code>代码</code></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">     </span><br></pre></td></tr></table></figure>
-</li>
+<li><p><code>代码</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">Del_s_t</span><span class="params">(SqList &amp;L,ElemType s,ElemType t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>,i=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(L.length==<span class="number">0</span>||s&gt;=t)</span><br><span class="line">    	<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;L.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(L.data[i]&gt;=s&amp;&amp;L.data[i]&lt;=t)</span><br><span class="line">        	k++;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            L.data[i-k]=L.data[i];</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    L.length=L.length-k;</span><br><span class="line">    re</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>
-<p>从有序顺序表中删除所有其值重复的元素，使表中所有元素的值均不同。</p>
+<li><p>从有序顺序表中删除所有其值重复的元素，使表中所有元素的值均不同。</p>
 </li>
-<li>
-<p>将两个有序顺序表合并为一个新的有序顺序表，并由函数返回结果顺序表。</p>
+<li><p>将两个有序顺序表合并为一个新的有序顺序表，并由函数返回结果顺序表。</p>
 </li>
-<li>
-<p>已知在一位数组A[m+n]中依次存放两个线性表a和b。编写一个函数，将数组中两个顺序表的位置互换。</p>
+<li><p>已知在一位数组A[m+n]中依次存放两个线性表a和b。编写一个函数，将数组中两个顺序表的位置互换。</p>
 </li>
-<li>
-<p>线性表a中的元素递增有序且按顺序存储于计算机内。要求设计一个算法，完成用最少时间在表中查找数值为x的元素，若找到，则将其与后继元素位置想交换，若找不到，则将其插入表中并使表中元素仍递增有序。</p>
+<li><p>线性表a中的元素递增有序且按顺序存储于计算机内。要求设计一个算法，完成用最少时间在表中查找数值为x的元素，若找到，则将其与后继元素位置想交换，若找不到，则将其插入表中并使表中元素仍递增有序。</p>
 </li>
-<li>
-<p>给定三个序列A、B、C，长度均为n，且均无重复元素的递增序列，请设计一个时间上尽可能高效的算法，逐行输出同时存在于这三个序列中的所有元素。</p>
+<li><p>给定三个序列A、B、C，长度均为n，且均无重复元素的递增序列，请设计一个时间上尽可能高效的算法，逐行输出同时存在于这三个序列中的所有元素。</p>
 </li>
-<li>
-<p>设将n(n&gt;1)个整数存放到一维数组R中。设计一个在时间和空间两方面都尽可能高效的算法，将R中保存的序列循环左移p(0&lt;p&lt;n)个位置。</p>
+<li><p>设将n(n&gt;1)个整数存放到一维数组R中。设计一个在时间和空间两方面都尽可能高效的算法，将R中保存的序列循环左移p(0&lt;p&lt;n)个位置。</p>
 </li>
-<li>
-<p>一个长度为L(L≥1)的升序序列S，处在第L/2个位置的数称为S的中位数。两个序列的中位数是包含它们所有元素的升序序列的中位数。现有两个等长升序序列A和B，试设计一个在时间和空间两方面都尽可能高效的算法，找出两个序列A和B的中位数。</p>
+<li><p>一个长度为L(L≥1)的升序序列S，处在第L&#x2F;2个位置的数称为S的中位数。两个序列的中位数是包含它们所有元素的升序序列的中位数。现有两个等长升序序列A和B，试设计一个在时间和空间两方面都尽可能高效的算法，找出两个序列A和B的中位数。</p>
 </li>
-<li>
-<p>已知一个整数序列A，长度为n，若存在大于n/2个元素相等且等于x，则称x为A的主元素。假设A中的n个元素保存在一个一维数组中，请设计一个尽可能高效的算法，找出A的主元素。若存在主元素，则输出该元素；否则输出-1。</p>
+<li><p>已知一个整数序列A，长度为n，若存在大于n&#x2F;2个元素相等且等于x，则称x为A的主元素。假设A中的n个元素保存在一个一维数组中，请设计一个尽可能高效的算法，找出A的主元素。若存在主元素，则输出该元素；否则输出-1。</p>
 </li>
-<li>
-<p>给定一个含n(n≥1)个整数的数组，请设计一个在时间上尽可能高效的算法，找出数组中未出现的最小正整数。</p>
+<li><p>给定一个含n(n≥1)个整数的数组，请设计一个在时间上尽可能高效的算法，找出数组中未出现的最小正整数。</p>
 </li>
-<li>
-<p>定义三元组(a, b, c)（均为整数）的距离D=|a-b|+|b-c|+|c-a|。给定3个非空整数集合A, B, C，按升序分别存储在3个数组里。请设计一个尽可能高效的算法，计算并输出所有可能的三元组(a, b, c)(a∈A, b∈B, c∈C)中的最小距离。</p>
+<li><p>定义三元组(a, b, c)（均为整数）的距离D&#x3D;|a-b|+|b-c|+|c-a|。给定3个非空整数集合A, B, C，按升序分别存储在3个数组里。请设计一个尽可能高效的算法，计算并输出所有可能的三元组(a, b, c)(a∈A, b∈B, c∈C)中的最小距离。</p>
 </li>
 </ol>
 
@@ -479,7 +453,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">2.4k</span>
+                    <span class="item-value border-box word">2.5k</span>
                 </span>
             
 
