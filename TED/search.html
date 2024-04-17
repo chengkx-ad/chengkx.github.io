@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youyi's TED Word Search</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="count">
+        <div class="wordcount">
+            <div id="cloudtitle">每天多学<span>一点点</span></div>
+            <div id="line"></div>
+        </div>  
+        <div id="totalcount"></div>
+        <div class="wordcount2">
+            <div id="cloudtitle2">单词们的词频<span>词云</span></div>
+            <div id="image">
+                <img src="./images/wordcloud.png" 
+                alt="词云图" 
+                style="width: 320px; 
+                height: 180px; 
+                border: 1.5px solid #ccc; 
+                border-radius: 15px;" 
+                onclick="showLargeImage(this)">
+            </div>
+        </div>  
+    </div>
+    <div class="button">
+        <img id="editBtn" src="./images/刷新.png" onclick="resetPage()">
+    </div>
+    <div class="search-box">
+        <input type="text" id="searchInput" class="search-txt" oninput="searchWord()" placeholder="Search for word..." />
+        <a class="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="show-box">
+        <ul id="searchList"></ul>
+    </div>  
+    <div class="right"> 
+        <div class="shared-box">
+            <button id="tedBtn">TED单篇词汇表</button>
+            <button id="phraseBtn">短语合集</button>
+            <button id="randomBtn">抽查！</button>
+            <ul id="itemList"></ul>
+        </div>
+    </div>
+    <script src="./js/center.js"></script>
+    <script src="./js/right.js"></script>    
+    <script src="./js/left.js"></script>  
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script src="./js/line.js"></script>  
+</body>
+</html>
