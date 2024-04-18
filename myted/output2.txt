@@ -11,6 +11,7 @@ abduct
 abnormality
 abstinence
 abstractly
+abundant
 abuse
 abusive
 acclimate
@@ -45,6 +46,7 @@ affluent
 afterward
 aggressive
 agitate
+agriculture
 airplanes
 akin
 alcoholism
@@ -218,6 +220,7 @@ bump up
 bundle
 bust
 bustle
+by-product
 byproduct
 cadet
 cage
@@ -232,6 +235,7 @@ captivity
 carastrophe
 carbohydrate
 carbon
+carbon emission
 card-carrying
 cardiovascular disease
 caricature
@@ -279,6 +283,7 @@ chrono-synclastic infundibulum
 chronological
 chronologically
 chronology
+chunk
 chunky
 cigarette
 circadian rhythm
@@ -302,6 +307,7 @@ clinically
 clip
 clobber
 closure
+coastal
 cocaine
 cofounder
 cognition
@@ -450,6 +456,7 @@ curved
 custodian
 cut a path through
 cycle through
+cyclone
 cynic
 cytokined
 daydream
@@ -474,6 +481,7 @@ definitive
 deliberate practice
 delicate
 deliver
+delta
 delusion
 demanding
 dementia
@@ -486,6 +494,7 @@ dense
 deoxygenate
 dependable
 depletion
+deposite
 depressant
 deprivation
 deprive
@@ -520,6 +529,7 @@ dialogue
 dictate
 dictionary
 die a slow death
+die down
 digestive system
 digitize
 dilate
@@ -544,6 +554,7 @@ disenchant
 dismiss
 disorder
 disparity
+displace
 disrupt
 disruption
 dissatisfaction
@@ -557,6 +568,7 @@ disturb
 ditch
 dive into
 diverse
+diversity
 diving coach
 divorce
 doctorate
@@ -577,10 +589,12 @@ dramatic
 dramatically
 dranining
 dread
+dredge
 drift off
 drift off into
 driveway
 drop out
+drought
 dub
 duct tape
 dude
@@ -592,6 +606,7 @@ dust yourself off
 dynamic
 dysfunction
 eating disorders
+ebbs and flows
 eccentric
 economic
 ecstatic
@@ -603,7 +618,9 @@ elect
 electrical
 electrode
 element
+elevated
 eliminate
+embankment
 embark
 embarrassed
 embarrassment
@@ -613,6 +630,7 @@ embroil
 emerge
 emergency
 emerging
+emission
 emotion regulation
 emotional intelligence
 emotionally
@@ -652,6 +670,7 @@ equation
 equitably
 eradicate
 erode
+erratic
 escalation
 escort
 essential
@@ -665,6 +684,7 @@ ethnic
 eucalyptus
 evaluation
 evaluative
+ever-shifting
 evergreen
 everlasting
 evil
@@ -723,6 +743,7 @@ favoritism
 federal deficit
 feedback
 fence
+fertile ecosystems
 fertility
 fertilizer
 fiber
@@ -769,6 +790,7 @@ fork over
 former
 formulas
 formulate
+fortify
 foster
 frame
 framework
@@ -935,6 +957,7 @@ impact
 impair
 impart
 impassive
+impede
 impenetrable
 imperfection
 implication
@@ -1078,6 +1101,7 @@ lab coat
 laboratory
 ladder
 laid-back
+landmass
 launch the company
 laxative
 leadership
@@ -1116,7 +1140,9 @@ lipoprotein
 literacy
 literal
 literally
+livelihood
 liver
+lobby
 locust
 logistic
 long-term memory
@@ -1140,6 +1166,7 @@ make-or-break
 malignant
 mandala
 mandate
+mangrove
 manhole
 manifestation
 manipulate
@@ -1151,6 +1178,7 @@ marathon
 marble
 march
 margin
+marine
 marriage
 marshal
 marshmallow
@@ -1196,6 +1224,7 @@ mic
 microscale
 microscope
 midlife crisis
+migration
 military
 millenium
 mindfully
@@ -1214,6 +1243,7 @@ mission
 misspeak
 misstep
 misunderstand
+mobility
 moderate
 modified
 mold
@@ -1370,6 +1400,7 @@ perception
 perfectionism
 performance
 peril
+permafrost
 permanent
 perpetuate
 perplex
@@ -1388,6 +1419,7 @@ philosopher
 philosophy
 phobia
 phoenix
+physically
 physician
 piano recital
 pickle
@@ -1593,6 +1625,7 @@ resemble
 resequencing
 reservation
 reserve
+resident
 residue
 resilience
 resilient
@@ -1686,6 +1719,7 @@ scroll up
 scrub
 secondary
 sedentary
+sediment
 seep
 segregated
 seizure
@@ -1721,6 +1755,7 @@ shame
 shareable
 shatter
 shepherd
+shield
 shockingly
 shoelace
 shortsightedess
@@ -1846,6 +1881,7 @@ stick with
 stigma
 stillborn
 stillness
+stilt
 stimulant
 stimulate
 stimulation
@@ -2031,6 +2067,7 @@ turn out
 tweak
 twentysomething
 twist
+typhoon
 tyranny
 ultimately
 umami
@@ -2086,6 +2123,7 @@ validate
 validation
 valley
 vantage
+variable
 variation
 vastness
 veiled
