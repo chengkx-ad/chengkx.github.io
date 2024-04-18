@@ -35,7 +35,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#30aecf","title":"lalayouyi'blog","author":"youyi","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","MYCSDN":"https://lalayouyi.blog.csdn.net || fa-solid fa-crown","myted":"/myted || fa-solid fa-book-open-reader"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"何须多虑盈亏事，终归小满胜万全","hitokoto":false},"social_contact":{"enable":false,"links":{"github":"https://github.com/lalayouyi"}},"scroll":{"progress_bar":false,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#30aecf","title":"lalayouyi'blog","author":"youyi","avatar":"/images/avatar.jpg","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","myted":"/myted || fa-solid fa-book-open-reader","MYCSDN":"https://lalayouyi.blog.csdn.net || fa-solid fa-crown","tools":"https://ai-bot.cn/ || fa-solid fa-toolbox"},"first_screen":{"enable":true,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"何须多虑盈亏事，终归小满胜万全","hitokoto":false},"social_contact":{"enable":false,"links":{"github":"https://github.com/lalayouyi"}},"scroll":{"progress_bar":false,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":true,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.1.0"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -108,6 +108,18 @@
                         
                         <li class="menu-item">
                             <a class=""
+                               href="/myted"
+                            >
+                                
+                                    <i class="menu-icon fa-solid fa-book-open-reader"></i>
+                                
+                                MYTED
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
                                target="_blank" rel="noopener" href="https://lalayouyi.blog.csdn.net"
                             >
                                 
@@ -120,12 +132,12 @@
                         
                         <li class="menu-item">
                             <a class=""
-                               href="/myted"
+                               target="_blank" rel="noopener" href="https://ai-bot.cn/"
                             >
                                 
-                                    <i class="menu-icon fa-solid fa-book-open-reader"></i>
+                                    <i class="menu-icon fa-solid fa-toolbox"></i>
                                 
-                                MYTED
+                                TOOLS
                             </a>
                         </li>
                     
@@ -167,6 +179,13 @@
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
+                       href="/myted"
+                    >MYTED</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
                        target="_blank" rel="noopener" href="https://lalayouyi.blog.csdn.net"
                     >MYCSDN</a>
                 </li>
@@ -174,8 +193,8 @@
                 
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/myted"
-                    >MYTED</a>
+                       target="_blank" rel="noopener" href="https://ai-bot.cn/"
+                    >TOOLS</a>
                 </li>
             
         </ul>
@@ -445,35 +464,19 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2024/04/04/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%A4%BA/"
-                                   title="线性表的顺序表示"
+                                   href="/2024/04/18/%E5%8F%B3%E4%B8%80%E7%9A%84%E7%94%B5%E5%AD%90%E7%AC%94%E8%AE%B0%E5%85%A8%E5%AF%BC%E8%88%AA%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0ing/"
+                                   title="右一的电子笔记全导航（持续更新ing"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">线性表的顺序表示</span>
+                                        <span class="post-nav-title-item text-ellipsis">右一的电子笔记全导航（持续更新ing</span>
                                         <span class="post-nav-item">Prev posts</span>
                                     </span>
                                 </a>
                             </div>
                         
-                        
-                            <div class="next-post">
-                                <a class="next"
-                                   rel="next"
-                                   href="/2024/03/22/hello-world/"
-                                   title="Hello World"
-                                >
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
-                                        <span class="post-nav-item">Next posts</span>
-                                    </span>
-                                    <span class="right arrow-icon flex-center">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </span>
-                                </a>
-                            </div>
                         
                     </div>
                 
@@ -533,7 +536,7 @@
             
                 <span class="count-box border-box word">
                     <span class="item-type border-box">Total words</span>
-                    <span class="item-value border-box word">7.9k</span>
+                    <span class="item-value border-box word">4.2k</span>
                 </span>
             
 
