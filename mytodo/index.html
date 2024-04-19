@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喵喵大王立大功</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="board">
+        <!-- 代办框 -->
+        <section class="container">
+            <!-- 标题 -->
+            <div class="heading">
+              <img class="heading__img" src="./src/吐舌.png">
+              <h1 class="heading__title">To-Do List</h1>
+            </div>
+            <form class="form">
+              <div>
+                <!-- ~ Today I need to ~ -->
+                <label class="form__label" for="todo">~ Today I need to ~</label>
+                <!-- 背景音乐 -->
+                <audio src="./src/Fall.ogg" controls loop preload="metadata"></audio>
+                <!-- 待办事项输入框 -->
+                <input class="form__input"
+                     type="text" 
+                     id="todo" 
+                     name="to-do"
+                     size="30"
+                     required>
+                <!-- 提交按钮 -->
+                <button class="button"><span>Submit</span></button>
+              </div>
+            </form>
+            <div>
+              <!-- 代办事项列表 -->
+              <ul class="toDoList">
+              </ul>
+            </div>
+            <div>
+                <!-- 代办框右下角那三个猫爪图片 -->
+                <img class="cute1" src="./src/cute.png">
+                <img class="cute2" src="./src/cute2.png">
+                <img class="cute3" src="./src/cute3.png">
+            </div>
+        </section>
+        <!-- 时钟部分 -->
+        <div class="clock">
+            <!-- 小时 -->
+            <div class="hours">
+              <div class="first">
+                <div class="number">0</div>
+              </div>
+              <div class="second">
+                <div class="number">0</div>
+              </div>
+            </div>
+            <div class="tick">:</div>
+            <!-- 分钟 -->
+            <div class="minutes">
+              <div class="first">
+                <div class="number">0</div>
+              </div>
+              <div class="second">
+                <div class="number">0</div>
+              </div>
+            </div>
+            <div class="tick">:</div>
+            <!-- 秒 -->
+            <div class="seconds">
+              <div class="first">
+                <div class="number">0</div>
+              </div>
+              <div class="second infinite">
+                <div class="number">0</div>
+              </div>
+            </div>
+        </div>
+        <!-- 赛博小猫 -->
+        <div class="maomao">
+          <img id="muyu" src="./src/xixi.png" alt="木鱼图片" onclick="addMerit()">
+          <div id="merit">
+              <p class="big">功德+1</p>
+              <p class="medium">好运+1</p>
+              <p class="small">烦恼-1</p>
+          </div>
+        </div>
+        <!-- 骰子 -->
+        <div class="luck">
+          <span class="rest">嘤，偶数休息</span>
+          <canvas width="200" height="200"></canvas>
+        </div>
+    </main>
+</body>
+<script>
+  function addMerit() {
+    document.getElementById('merit').style.display = "block";
+    setTimeout(function(){
+      document.getElementById('merit').style.display = "none";
+    }, 1000);
+  }
+</script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+<script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+<script src="https://unpkg.com/zdog@1.1.3/dist/zdog.dist.min.js"></script>
+<script src="./js/touzi.js"></script>
+<script src="./js/stickynote.js"></script>
+<script src="./js/todolist.js"></script>
+<script src="./js/clock.js"></script>
+</html>
