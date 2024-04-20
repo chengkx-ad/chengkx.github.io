@@ -300,25 +300,39 @@
 // 图片版
 // 在页面加载后显示初始图片
 window.onload = function() {
-    var canvas = document.querySelector('canvas');
-    var ctx = canvas.getContext('2d');
-    var img = new Image();
-    img.onload = function() {
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    };
-    img.src = './src/lucky.jpg'; // 替换成您的初始图片路径
-};
-  
-document.querySelector('.roller').addEventListener('click', function() {
-    var canvas = document.querySelector('canvas');
-    var ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var num = Math.floor(Math.random() * 5) + 1;
-  
-    // 加载并绘制图片
-    var img = new Image();
-    img.onload = function() {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    };
-    img.src = './src/' + num + '.png';
+  var canvas = document.querySelector('canvas');
+  var ctx = canvas.getContext('2d');
+  var images = {}; // 用于存储预加载的图像
+  var imageURLs = [
+    './src/lucky.jpg',
+    './src/1.png',
+    './src/2.png',
+    './src/3.png',
+    './src/4.png',
+    './src/5.png'
+  ];
+
+  // 预加载所有图像
+  var promises = imageURLs.map(function(url) {
+    return new Promise(function(resolve, reject) {
+      var img = new Image();
+      img.onload = function() {
+        images[url] = img;
+        if (url === './src/lucky.jpg') { // 只显示一张
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        }
+        resolve();
+      };
+      img.src = url;
+    });
   });
+
+  // 在所有图像都加载完毕后绑定点击事件
+  Promise.all(promises).then(function() {
+    document.querySelector('.roller').addEventListener('click', function() {
+      var num = Math.floor(Math.random() * 5) + 1;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(images['./src/' + num + '.png'], 0, 0, canvas.width, canvas.height);
+    });
+  });
+};
