@@ -324,140 +324,104 @@
                 <div class="post-content keep-markdown-body">
                     
 
-                    <h2 id="step1安装nodejs和git"><a class="markdownIt-Anchor" href="#step1安装nodejs和git"></a> Step1：安装Node.js和Git</h2>
-<ul>
+                    <h2 id="Step1：安装Node-js和Git"><a href="#Step1：安装Node-js和Git" class="headerlink" title="Step1：安装Node.js和Git"></a>Step1：安装Node.js和Git</h2><ul>
 <li><a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42006801/article/details/124830995">node.js安装<i class="fas fa-external-link-alt"></i></a>，在安装时会自动安装npm。</li>
 <li>Git安装，<a class="link" target="_blank" rel="noopener" href="https://git-scm.com/download/win">点击此处<i class="fas fa-external-link-alt"></i></a>访问官网，按需下载对应版本，默认安装即可。</li>
-<li>检验安装是否成功：
-<ul>
-<li><code>Win + R</code> 打开运行窗口，输入<code>cmd</code>，输入如下命令，有相应版本信息显示则安装成功。<img lazyload alt="image" data-src="./Build-my-first-blog/1.jpg"></li>
-<li>若不正确可以卸载软件重新安装，此外若安装成功，在桌面右键鼠标，可以看到菜单里多了 Git GUI Here 和 Git Bash Here两个选项，第一个是图形界面的Git操作，另一个是命令行。<img lazyload alt="image" data-src="./Build-my-first-blog/2.png"></li>
+<li>检验安装是否成功：<ul>
+<li><code>Win + R</code> 打开运行窗口，输入<code>cmd</code>，输入如下命令，有相应版本信息显示则安装成功。<img lazyload alt="image" data-src="/./Build-my-first-blog/1.jpg"></li>
+<li>若不正确可以卸载软件重新安装，此外若安装成功，在桌面右键鼠标，可以看到菜单里多了 Git GUI Here 和 Git Bash Here两个选项，第一个是图形界面的Git操作，另一个是命令行。<img lazyload alt="image" data-src="/./Build-my-first-blog/2.png"></li>
 </ul>
 </li>
 </ul>
-<h2 id="step2安装并初始化配置hexo"><a class="markdownIt-Anchor" href="#step2安装并初始化配置hexo"></a> Step2：安装并初始化配置Hexo</h2>
-<ul>
-<li>
-<p>在期望的位置新建一个文件夹，博客相关的内容都存在这个文件夹里。我这里直接在桌面新建了<code>my_blog</code>文件夹。</p>
+<h2 id="Step2：安装并初始化配置Hexo"><a href="#Step2：安装并初始化配置Hexo" class="headerlink" title="Step2：安装并初始化配置Hexo"></a>Step2：安装并初始化配置Hexo</h2><ul>
+<li><p>在期望的位置新建一个文件夹，博客相关的内容都存在这个文件夹里。我这里直接在桌面新建了<code>my_blog</code>文件夹。</p>
 </li>
-<li>
-<p>在该文件夹下右键鼠标，点击<code>Git Bash Here</code>，输入以下npm命令<img lazyload alt="image" data-src="Build-my-first-blog/3.png"></p>
+<li><p>在该文件夹下右键鼠标，点击<code>Git Bash Here</code>，输入以下npm命令<img lazyload alt="image" data-src="/Build-my-first-blog/3.png"></p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g  </span><br><span class="line">$ npm install hexo-deployer-git --save  </span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>在刚才新建的文件夹下再次新建一个<code>Hexo</code>文件夹，进入该<code>Hexo</code>文件夹右键，点击<code>Git Bash Here</code>，输入以下命令：<code>hexo init</code>，如下图：<img lazyload alt="image" data-src="./Build-my-first-blog/4.png"></p>
+<li><p>在刚才新建的文件夹下再次新建一个<code>Hexo</code>文件夹，进入该<code>Hexo</code>文件夹右键，点击<code>Git Bash Here</code>，输入以下命令：<code>hexo init</code>，如下图：<img lazyload alt="image" data-src="/./Build-my-first-blog/4.png"></p>
 </li>
 </ul>
-<h2 id="step3本地查看效果"><a class="markdownIt-Anchor" href="#step3本地查看效果"></a> Step3：本地查看效果</h2>
-<ul>
-<li>
-<p>执行以下命令：<code>hexo generate</code>和<code>hexo server</code><img lazyload alt="image" data-src="./Build-my-first-blog/5.png"><img lazyload alt="image" data-src="./Build-my-first-blog/6.png"></p>
+<h2 id="Step3：本地查看效果"><a href="#Step3：本地查看效果" class="headerlink" title="Step3：本地查看效果"></a>Step3：本地查看效果</h2><ul>
+<li><p>执行以下命令：<code>hexo generate</code>和<code>hexo server</code><img lazyload alt="image" data-src="/./Build-my-first-blog/5.png"><img lazyload alt="image" data-src="/./Build-my-first-blog/6.png"></p>
 </li>
-<li>
-<p>而后可登录<code>http://localhost:4000/</code>，查看效果<img lazyload alt="image" data-src="./Build-my-first-blog/7.png"></p>
+<li><p>而后可登录<code>http://localhost:4000/</code>，查看效果<img lazyload alt="image" data-src="/./Build-my-first-blog/7.png"></p>
 </li>
 </ul>
-<h2 id="step4将博客部署到github-pages上"><a class="markdownIt-Anchor" href="#step4将博客部署到github-pages上"></a> Step4：将博客部署到Github Pages上</h2>
-<h3 id="1创建项目代码库"><a class="markdownIt-Anchor" href="#1创建项目代码库"></a> ①创建项目代码库</h3>
-<ul>
+<h2 id="Step4：将博客部署到Github-Pages上"><a href="#Step4：将博客部署到Github-Pages上" class="headerlink" title="Step4：将博客部署到Github Pages上"></a>Step4：将博客部署到Github Pages上</h2><h3 id="①创建项目代码库"><a href="#①创建项目代码库" class="headerlink" title="①创建项目代码库"></a>①创建项目代码库</h3><ul>
 <li>点击<code>New repository</code>创建代码项目库。</li>
-<li>注意！！项目名必须是：<a class="link" target="_blank" rel="noopener" href="http://xn--6qqv7i14ofosyrb.github.io">你的用户名.github.io<i class="fas fa-external-link-alt"></i></a>！！！否则后续会连接不上以致404，谁试谁知道o(╥﹏╥)o<img lazyload alt="image" data-src="Build-my-first-blog/8.jpg"></li>
+<li>注意！！项目名必须是：你的用户名.github.io！！！否则后续会连接不上以致404，谁试谁知道o(╥﹏╥)o<img lazyload alt="image" data-src="/Build-my-first-blog/8.jpg"></li>
 </ul>
-<h3 id="2配置ssh密钥"><a class="markdownIt-Anchor" href="#2配置ssh密钥"></a> ②配置SSH密钥</h3>
-<ul>
+<h3 id="②配置SSH密钥"><a href="#②配置SSH密钥" class="headerlink" title="②配置SSH密钥"></a>②配置SSH密钥</h3><ul>
 <li>在你第一次新建的文件夹里面（my_blog） <code>Git Bash Here</code>输入以下命令：<code>ssh-keygen -t rsa -C &quot;your email@example.com&quot; </code></li>
 <li>而后会出现<code>Enter file in which to save the key (/c/Users/you/.ssh/id_rsa):</code>，这里直接回车将密钥按默认文件进行存储。</li>
-<li>而后会出现<code>Enter passphrase (empty for no passphrase):  </code>，这里是让输入密码，确实没必要设置！！本人设置了123，后续还得动不动输入密码，且用下述方法删除了o(╥﹏╥)o。<img lazyload alt="image" data-src="./Build-my-first-blog/10.png"><img lazyload alt="image" data-src="./Build-my-first-blog/9.png"></li>
+<li>而后会出现<code>Enter passphrase (empty for no passphrase):  </code>，这里是让输入密码，确实没必要设置！！本人设置了123，后续还得动不动输入密码，且用下述方法删除了o(╥﹏╥)o。<img lazyload alt="image" data-src="/./Build-my-first-blog/10.png"><img lazyload alt="image" data-src="/./Build-my-first-blog/9.png"></li>
 </ul>
 <hr>
 <ul>
-<li>
-<p>完整运行结果如下：<img lazyload alt="image" data-src="./Build-my-first-blog/11.png"></p>
+<li><p>完整运行结果如下：<img lazyload alt="image" data-src="/./Build-my-first-blog/11.png"></p>
 </li>
-<li>
-<p>运行以下命令，将公钥内容复制到系统粘贴板上：<code> $ clip &lt; ~/.ssh/id_rsa.pub</code><img lazyload alt="image" data-src="./Build-my-first-blog/12.png"></p>
+<li><p>运行以下命令，将公钥内容复制到系统粘贴板上：<code> $ clip &lt; ~/.ssh/id_rsa.pub</code><img lazyload alt="image" data-src="/./Build-my-first-blog/12.png"></p>
 </li>
 </ul>
-<h3 id="3在github账户中添加公钥"><a class="markdownIt-Anchor" href="#3在github账户中添加公钥"></a> ③在Github账户中添加公钥</h3>
-<ul>
-<li>
-<p>进入Settings</p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/13.png"></p>
+<h3 id="③在Github账户中添加公钥"><a href="#③在Github账户中添加公钥" class="headerlink" title="③在Github账户中添加公钥"></a>③在Github账户中添加公钥</h3><ul>
+<li><p>进入Settings</p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/13.png"></p>
 </li>
-<li>
-<p>找到<code>SSH and GPG Keys</code></p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/14.png"></p>
+<li><p>找到<code>SSH and GPG Keys</code></p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/14.png"></p>
 </li>
-<li>
-<p>选择<code>New SSH key</code></p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/15.png"></p>
+<li><p>选择<code>New SSH key</code></p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/15.png"></p>
 </li>
-<li>
-<p>粘贴密钥</p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/16.jpg"></p>
+<li><p>粘贴密钥</p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/16.jpg"></p>
 </li>
 </ul>
-<h3 id="4测试"><a class="markdownIt-Anchor" href="#4测试"></a> ④测试</h3>
-<ul>
-<li>输入以下命令：<code> $ ssh -T git@github.com</code>，最后出现successfully即可。<img lazyload alt="image" data-src="./Build-my-first-blog/17.jpg"></li>
+<h3 id="④测试"><a href="#④测试" class="headerlink" title="④测试"></a>④测试</h3><ul>
+<li>输入以下命令：<code> $ ssh -T git@github.com</code>，最后出现successfully即可。<img lazyload alt="image" data-src="/./Build-my-first-blog/17.jpg"></li>
 </ul>
-<h3 id="5配置git个人信息"><a class="markdownIt-Anchor" href="#5配置git个人信息"></a> ⑤配置Git个人信息</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;此处填你的用户名&quot;</span>  </span><br><span class="line">$ git config --global user.email  <span class="string">&quot;此处填你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/18.png"></p>
-<h3 id="6将本地的hexo文件更新到github的库中"><a class="markdownIt-Anchor" href="#6将本地的hexo文件更新到github的库中"></a> ⑥将本地的Hexo文件更新到Github的库中</h3>
-<ul>
-<li>
-<p>粘贴SSH地址</p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/19.png"></p>
+<h3 id="⑤配置Git个人信息"><a href="#⑤配置Git个人信息" class="headerlink" title="⑤配置Git个人信息"></a>⑤配置Git个人信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;此处填你的用户名&quot;</span>  </span><br><span class="line">$ git config --global user.email  <span class="string">&quot;此处填你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/18.png"></p>
+<h3 id="⑥将本地的Hexo文件更新到Github的库中"><a href="#⑥将本地的Hexo文件更新到Github的库中" class="headerlink" title="⑥将本地的Hexo文件更新到Github的库中"></a>⑥将本地的Hexo文件更新到Github的库中</h3><ul>
+<li><p>粘贴SSH地址</p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/19.png"></p>
 </li>
-<li>
-<p>修改Hexo文件夹下的<code>_config.yml</code>文件</p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/20.jpg"></p>
+<li><p>修改Hexo文件夹下的<code>_config.yml</code>文件</p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/20.jpg"></p>
 </li>
-<li>
-<p>在Hexo文件夹下的<code>Git Bash Here</code>下，先运行<code> npm install hexo-deployer-git --save</code><img lazyload alt="image" data-src="./Build-my-first-blog/21.png"></p>
+<li><p>在Hexo文件夹下的<code>Git Bash Here</code>下，先运行<code> npm install hexo-deployer-git --save</code><img lazyload alt="image" data-src="/./Build-my-first-blog/21.png"></p>
 </li>
-<li>
-<p>然后输入<code>hexo g -d</code>，每次更新都要跑一下这个上传，第一次输入时，我这边是弹出了连接提示<img lazyload alt="image" data-src="./Build-my-first-blog/22.jpg"></p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/23.jpg"></p>
+<li><p>然后输入<code>hexo g -d</code>，每次更新都要跑一下这个上传，第一次输入时，我这边是弹出了连接提示<img lazyload alt="image" data-src="/./Build-my-first-blog/22.jpg"></p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/23.jpg"></p>
 </li>
-<li>
-<p>最后成功上传最后会显示如下提示：<img lazyload alt="image" data-src="./Build-my-first-blog/24.png"></p>
+<li><p>最后成功上传最后会显示如下提示：<img lazyload alt="image" data-src="/./Build-my-first-blog/24.png"></p>
 </li>
 </ul>
-<h3 id="7访问博客"><a class="markdownIt-Anchor" href="#7访问博客"></a> ⑦访问博客</h3>
-<ul>
-<li>上述都完成后，检验是否成功的方法是：从你的博客地址（<a class="link" target="_blank" rel="noopener" href="https://xn--6qqv7i14ofosyrb.github.io">https://你的用户名.github.io<i class="fas fa-external-link-alt"></i></a>）访问，若出现如下画面即为连接成功。<img lazyload alt="image" data-src="./Build-my-first-blog/25.png"></li>
+<h3 id="⑦访问博客"><a href="#⑦访问博客" class="headerlink" title="⑦访问博客"></a>⑦访问博客</h3><ul>
+<li>上述都完成后，检验是否成功的方法是：从你的博客地址（https:&#x2F;&#x2F;你的用户名.github.io）访问，若出现如下画面即为连接成功。<img lazyload alt="image" data-src="/./Build-my-first-blog/25.png"></li>
 </ul>
-<h2 id="step5发表文章"><a class="markdownIt-Anchor" href="#step5发表文章"></a> Step5：发表文章</h2>
-<ul>
-<li>
-<p>首先安装好图片插件，否则会出现图片不显示的问题。</p>
+<h2 id="Step5：发表文章"><a href="#Step5：发表文章" class="headerlink" title="Step5：发表文章"></a>Step5：发表文章</h2><ul>
+<li><p>首先安装好图片插件，否则会出现图片不显示的问题。</p>
 </li>
-<li>
-<p>再次打开Hexo文件夹下的<code>_config.yml</code>，修改<code>post_asset_folder: false</code>为<code>post_asset_folder: true</code>。<img lazyload alt="image" data-src="./Build-my-first-blog/26.png"></p>
+<li><p>再次打开Hexo文件夹下的<code>_config.yml</code>，修改<code>post_asset_folder: false</code>为<code>post_asset_folder: true</code>。<img lazyload alt="image" data-src="/./Build-my-first-blog/26.png"></p>
 </li>
-<li>
-<p>然后在Hexo文件夹下的<code>Git Bash Here</code>下，输入如下命令安装图片上传插件包<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><img lazyload alt="image" data-src="./Build-my-first-blog/27.png"></p>
+<li><p>然后在Hexo文件夹下的<code>Git Bash Here</code>下，输入如下命令安装图片上传插件包<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><img lazyload alt="image" data-src="/./Build-my-first-blog/27.png"></p>
 </li>
-<li>
-<p>而后，输入<code>hexo n &quot;文件名&quot;</code>，即可创建对应的md文件和用来放图片的文件夹（可在Hexo\source\posts里查看）。<img lazyload alt="image" data-src="./Build-my-first-blog/28.png"></p>
-<p><img lazyload alt="image" data-src="./Build-my-first-blog/29.png"></p>
+<li><p>而后，输入<code>hexo n &quot;文件名&quot;</code>，即可创建对应的md文件和用来放图片的文件夹（可在Hexo\source\posts里查看）。<img lazyload alt="image" data-src="/./Build-my-first-blog/28.png"></p>
+<p><img lazyload alt="image" data-src="/./Build-my-first-blog/29.png"></p>
 </li>
-<li>
-<p>后续即编辑md内容（我默认用的typora编辑器），涉及到图片的地方，就用<code>![](./Build-my-first-blog/1.png</code>标准md图片引入语法。</p>
+<li><p>后续即编辑md内容（我默认用的typora编辑器），涉及到图片的地方，就用<code>![](./Build-my-first-blog/1.png</code>标准md图片引入语法。</p>
 </li>
-<li>
-<p>编辑好后，记得git跑一下<code>hexo g -d</code>上传更新。</p>
+<li><p>编辑好后，记得git跑一下<code>hexo g -d</code>上传更新。</p>
 </li>
-<li>
-<p>再次访问主页连接，即可看到最新更新的博客啦~<img lazyload alt="image" data-src="./Build-my-first-blog/30.png"></p>
+<li><p>再次访问主页连接，即可看到最新更新的博客啦~<img lazyload alt="image" data-src="/./Build-my-first-blog/30.png"></p>
 </li>
 </ul>
 <hr>
 <ul>
-<li>参考博客
-<ul>
+<li>参考博客<ul>
 <li><a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36759224/article/details/82121420">使用 Github Pages 和 Hexo 搭建自己的独立博客<i class="fas fa-external-link-alt"></i></a></li>
 <li><a class="link" target="_blank" rel="noopener" href="https://blog.csdn.net/McNeeley/article/details/131276010">解决hexo博文图片不显示的方法<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
@@ -548,7 +512,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step1%E5%AE%89%E8%A3%85nodejs%E5%92%8Cgit"><span class="nav-text"> Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step2%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEhexo"><span class="nav-text"> Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step3%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text"> Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step4%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github-pages%E4%B8%8A"><span class="nav-text"> Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text"> ①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5"><span class="nav-text"> ②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E5%9C%A8github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text"> ③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E6%B5%8B%E8%AF%95"><span class="nav-text"> ④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E9%85%8D%E7%BD%AEgit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text"> ⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text"> ⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text"> ⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step5%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text"> Step5：发表文章</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1%EF%BC%9A%E5%AE%89%E8%A3%85Node-js%E5%92%8CGit"><span class="nav-text">Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEHexo"><span class="nav-text">Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step3%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text">Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step4%EF%BC%9A%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github-Pages%E4%B8%8A"><span class="nav-text">Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A1%E9%85%8D%E7%BD%AESSH%E5%AF%86%E9%92%A5"><span class="nav-text">②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A2%E5%9C%A8Github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text">③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A3%E6%B5%8B%E8%AF%95"><span class="nav-text">④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A4%E9%85%8D%E7%BD%AEGit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text">⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A5%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84Hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0Github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text">⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A6%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text">⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step5%EF%BC%9A%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text">Step5：发表文章</span></a></li></ol>
     </div>
 </div>
 
@@ -733,7 +697,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step1%E5%AE%89%E8%A3%85nodejs%E5%92%8Cgit"><span class="nav-text"> Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step2%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEhexo"><span class="nav-text"> Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step3%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text"> Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step4%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github-pages%E4%B8%8A"><span class="nav-text"> Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text"> ①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E9%85%8D%E7%BD%AEssh%E5%AF%86%E9%92%A5"><span class="nav-text"> ②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E5%9C%A8github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text"> ③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E6%B5%8B%E8%AF%95"><span class="nav-text"> ④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E9%85%8D%E7%BD%AEgit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text"> ⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text"> ⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text"> ⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step5%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text"> Step5：发表文章</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step1%EF%BC%9A%E5%AE%89%E8%A3%85Node-js%E5%92%8CGit"><span class="nav-text">Step1：安装Node.js和Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step2%EF%BC%9A%E5%AE%89%E8%A3%85%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AEHexo"><span class="nav-text">Step2：安装并初始化配置Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step3%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C"><span class="nav-text">Step3：本地查看效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step4%EF%BC%9A%E5%B0%86%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0Github-Pages%E4%B8%8A"><span class="nav-text">Step4：将博客部署到Github Pages上</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A0%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="nav-text">①创建项目代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A1%E9%85%8D%E7%BD%AESSH%E5%AF%86%E9%92%A5"><span class="nav-text">②配置SSH密钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A2%E5%9C%A8Github%E8%B4%A6%E6%88%B7%E4%B8%AD%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="nav-text">③在Github账户中添加公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A3%E6%B5%8B%E8%AF%95"><span class="nav-text">④测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A4%E9%85%8D%E7%BD%AEGit%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-text">⑤配置Git个人信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A5%E5%B0%86%E6%9C%AC%E5%9C%B0%E7%9A%84Hexo%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%88%B0Github%E7%9A%84%E5%BA%93%E4%B8%AD"><span class="nav-text">⑥将本地的Hexo文件更新到Github的库中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%91%A6%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="nav-text">⑦访问博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step5%EF%BC%9A%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-text">Step5：发表文章</span></a></li></ol>
     </div>
 </div>
 
