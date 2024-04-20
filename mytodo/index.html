@@ -19,8 +19,6 @@
               <div>
                 <!-- ~ Today I need to ~ -->
                 <label class="form__label" for="todo">~ Today I need to ~</label>
-                <!-- 背景音乐 -->
-                <audio src="./src/Fall.ogg" controls loop preload="metadata"></audio>
                 <!-- 待办事项输入框 -->
                 <input class="form__input"
                      type="text" 
@@ -92,6 +90,10 @@
           <button class="roller">power！</button>
           <canvas width="250" height="250"></canvas>
         </div> 
+
+        <!-- 白噪音 -->
+        <button id="openBtn"></button>
+
     </main>
 </body>
 <script>
@@ -99,7 +101,7 @@
     document.getElementById('merit').style.display = "block";
     setTimeout(function(){
       document.getElementById('merit').style.display = "none";
-    }, 1000);
+    }, 500);
   }
 </script>
 <!-- <script src="https://unpkg.com/zdog@1.1.3/dist/zdog.dist.min.js"></script> -->
@@ -107,4 +109,5 @@
 <script src="./js/stickynote.js"></script>
 <script src="./js/todolist.js"></script>
 <script src="./js/clock.js"></script>
+<script src="./js/music.js"></script>
 </html>

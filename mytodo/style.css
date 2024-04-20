@@ -261,18 +261,21 @@ li:hover {
 /* #region小猫start */
 /* 赛博小猫 */
 .maomao {
+    width: 250px;
+    height: 350px;
     text-align: center;
-    margin-left: 70%;
-    margin-top: -28%;
-    position: relative; /* 添加相对定位 */
+    position: absolute;
+    bottom: -5vh;
+    right: 13vw;
     display: inline-block; /* 显示为内联块级元素 */
     transform: scale(0.5); /* 50% 缩放 */
 }
 #merit {
     position: absolute; /* 绝对定位 */
-    top: 10%; /* 控制上方偏移 */
-    left: 65%; /* 控制左右居中 */
-    transform: translateX(-50%); /* 水平居中 */
+    width: 250px;
+    height: 350px;
+    bottom: -2%;
+    right: -70%;
     display: none;
     text-align: center; /* 文字居中 */
     animation: fadeOut 1.5s forwards; /* 添加渐变消失动画 */
@@ -283,15 +286,15 @@ li:hover {
     transition: color 1s ease; /* 颜色渐变效果 */
 }
 #merit .big {
-    font-size: 31px; /* 相对较大的字体 */
+    font-size: 38px; /* 相对较大的字体 */
     color: #694b3c;
 }
 #merit .medium {
-    font-size: 24px; /* 中等大小的字体 */
+    font-size: 33px; /* 中等大小的字体 */
     color: #906c4a;
 }
 #merit .small {
-    font-size: 20px; /* 相对较小的字体 */
+    font-size: 28px; /* 相对较小的字体 */
     color: #99806c;
 }
 
@@ -303,7 +306,7 @@ to {
 /* #endregion小猫start */
 
 
-/* 骰子 */
+/* #region骰子 */
 .luck {
     width: 250px;
     height: 350px;
@@ -314,18 +317,18 @@ to {
     font-family: system-ui;
     display: inline-block;
     place-items: center;
-    margin-left: 3%;
-    margin-top: -39%;
-    position: relative; /* 添加相对定位 */
+    position: absolute;
     transform: scale(0.6); /* 调整大小以适应布局 */
     aspect-ratio: 1/1;
+    bottom: -7vh;
+    right: 75vw;
 }
 
 .luck > button {
     position: absolute;
-    inset-inline-start: 50%;
-    inset-block-end: 0%;
-    transform: translate(-50%, 0%);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 
 .luck > canvas {
@@ -360,4 +363,23 @@ to {
 .roller:hover{
     scale: 0.8;
     --_background: var(--_active);
+}
+/* #endregion骰子 */
+
+#openBtn {
+    position: absolute;
+    top: 4vh;
+    right: 2vw;
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./src/唱片机.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+#openBtn:hover {
+    transform: scale(1.0);
 }
