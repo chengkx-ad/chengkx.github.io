@@ -27,6 +27,8 @@ document.getElementById('openBtn').addEventListener('click', function() {
     closeButton.textContent = '×';
     closeButton.classList.add('close-button');
     closeButton.style.position = 'fixed';
+    closeButton.style.width = '20px';
+    closeButton.style.height = '20px';
     closeButton.style.top = '3%';
     closeButton.style.right = '7%';
     closeButton.style.zIndex = '10000';
