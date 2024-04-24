@@ -81,15 +81,22 @@ function openSouGouSearch(word) {
 
     // 添加关闭按钮
     const closeButton = document.createElement('button');
-    closeButton.textContent = '关闭';
+    closeButton.textContent = '×';
     closeButton.classList.add('close-button');
     closeButton.style.position = 'fixed';
-    closeButton.style.top = '5%';
-    closeButton.style.right = '5%';
+    closeButton.style.width = '20px';
+    closeButton.style.height = '20px';
+    closeButton.style.top = '8%';
+    closeButton.style.right = '8%';
     closeButton.style.zIndex = '10000';
     closeButton.style.border = '1.2px solid #bfc1a9';
-    closeButton.style.borderRadius = '5px'; 
+    closeButton.style.borderRadius = '50%'; 
     closeButton.style.fontFamily = 'serif';
+    closeButton.style.fontSize = '15px';
+    closeButton.style.color = 'white';
+    closeButton.style.fontWeight = 'bold';
+    closeButton.style.padding = '2px';
+    closeButton.style.backgroundColor = '#d24735';
     closeButton.addEventListener('click', () => {
         document.body.removeChild(iframe);
         document.body.removeChild(closeButton);
