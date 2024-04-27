@@ -1,11 +1,14 @@
 // 获取id为board的元素
 const board = document.querySelector("#board");
-
+let highestZIndex = 1;
 // 循环创建102个便利贴
 for (let i = 0; i < 102; i++) {
-    // 创建div元素作为便利贴的容器，并添加类名"stickynote"
     const sticky = document.createElement("div");
     sticky.classList.add("stickynote");
+
+    sticky.style.zIndex = highestZIndex; // 将初始 z-index 设置为当前最高值
+
+    
 
     // 设置背景颜色
     const colorIndex = i % 6;
@@ -34,11 +37,13 @@ for (let i = 0; i < 102; i++) {
     let isDragging = false;
     let offsetX, offsetY;
 
+    sticky.style.zIndex = highestZIndex;
     sticky.addEventListener('mousedown', (e) => {
         isDragging = true;
         offsetX = e.clientX - sticky.getBoundingClientRect().left;
         offsetY = e.clientY - sticky.getBoundingClientRect().top;
-        sticky.style.zIndex = 100; // 放置在顶层
+        highestZIndex++; // 增加最高 z-index 值
+        sticky.style.zIndex = highestZIndex; // 将被点击的便利贴的 z-index 设置为更新后的最高值
     });
 
     document.addEventListener('mousemove', (e) => {
@@ -51,7 +56,7 @@ for (let i = 0; i < 102; i++) {
     document.addEventListener('mouseup', () => {
         if (isDragging) {
             isDragging = false;
-            sticky.style.zIndex = 1; // 恢复层级
+            // sticky.style.zIndex = 1; // 恢复层级
         }
     });
 
