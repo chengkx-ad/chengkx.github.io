@@ -16,8 +16,10 @@ request.onreadystatechange = function() {
         // 解析每行的年份和人数，并存入相应数组
         lines.forEach(function(line) {
             var data = line.split(' ');
-            years.push(data[0]);
-            counts.push(parseInt(data[1], 10)); // 使用以10进制解析人数
+            if (data.length === 2) {
+                years.push(data[0]);
+                counts.push(parseInt(data[1], 10));
+            }
         });
 
         for (var i = 0; i < counts.length; i++) {
