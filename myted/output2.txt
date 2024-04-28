@@ -175,6 +175,7 @@ backbone
 background
 backstage
 bacterial meningitis
+badge
 banish
 banshee
 barely
@@ -276,6 +277,7 @@ capable
 capillary
 capital
 capitalism
+captivate
 captivity
 carastrophe
 carb
@@ -283,6 +285,7 @@ carbohydrate
 carbon
 carbon emission
 card-carrying
+cardiovascular
 cardiovascular disease
 caricature
 carotid
@@ -319,9 +322,11 @@ check up
 chemical
 chemoreceptor
 chemotherapy
+chest
 chew over
 chic
 chill out
+chin
 choke
 cholesterol
 chore
@@ -336,6 +341,7 @@ chubby
 chunk
 chunky
 cigarette
+circadian
 circadian rhythm
 circuit
 circulate
@@ -398,6 +404,7 @@ complementary
 complex
 complexity
 complicated
+component
 compose
 compound
 comprehensive
@@ -736,6 +743,7 @@ emotion regulation
 emotional intelligence
 emotionally
 empathetic
+empathy
 emphasize
 empower
 empowering
@@ -930,6 +938,7 @@ frankly
 fraud
 fray
 freestanding
+frequency
 freshman
 frost
 frustrating
@@ -944,6 +953,7 @@ fundraiser
 funk
 furious
 fuzzy
+gadget
 gamble
 garage
 gases
@@ -968,6 +978,7 @@ gibberish
 give away
 give out
 give somebody a run for its money
+gizmo
 glamorous
 glittering
 glittery
@@ -1017,6 +1028,7 @@ guidebook
 gurney
 gut instinct
 habityated
+hack
 haikus
 hail
 hallmark
@@ -1257,6 +1269,7 @@ issue
 jail
 janitor
 jealousy
+jeopardy
 jet
 jewel
 jewelry
@@ -1311,6 +1324,7 @@ lick
 life hack
 lifelong
 ligament
+lightbulb
 likability
 likelihood
 limb
@@ -1324,6 +1338,7 @@ lipoprotein
 literacy
 literal
 literally
+literature
 livelihood
 liver
 lobby
@@ -1610,6 +1625,7 @@ paralyzed
 paranoid
 parasitic
 partial
+participant
 participate
 participation
 participle
@@ -1737,6 +1753,7 @@ procedural
 procedure
 procrastination
 productive
+productivity
 profile
 profitability
 profitable
@@ -1800,6 +1817,7 @@ randomly
 rare
 rarefied
 rarely
+rash
 rat
 ratio
 ration
@@ -1841,6 +1859,7 @@ refresher
 refrigerator
 refuge
 refugee
+regenerative
 region
 register
 regress
@@ -1916,6 +1935,7 @@ revolutionary
 revolutionize
 revv up
 reward system
+rhythm
 ridiculous
 riffraff
 rig up
