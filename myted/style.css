@@ -158,7 +158,7 @@ li span{
 }
 /* 易混词 */
 .flashcard-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     background: linear-gradient(to bottom, #dbedfb, #f6f9e4);
     border-radius: 30px;
