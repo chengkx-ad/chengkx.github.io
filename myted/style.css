@@ -87,12 +87,12 @@ li {
     border: 1.3px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    font-size: 14px;
+    font-size: 1.2vw;
     
 }
 li span{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.35vw;
     color: #2F90BA;
     font-family: serif;
 }
@@ -106,17 +106,17 @@ li span{
     top:8%;
     width: 28%;
     font-family: serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: center;
 }
 .count span{
-    font-size: 32px;
+    font-size: 2vw;
     font-family: 'serif';
     color: #ecbc41;
     font-weight: bold;
 }
 #special{
-    font-size: 22px;
+    font-size: 1.8vw;
     color: #2966cf;
     font-weight: bold;
 }
@@ -128,13 +128,13 @@ li span{
 }
 
 #cloudtitle span{
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-bottom: 3px;
     font-weight: bold;
     color: #2966cf;
 }
 #cloudtitle2 span{
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-bottom: 3px;
     font-weight: bold;
     color: #2966cf;
@@ -172,7 +172,7 @@ li span{
     width: 26%;
     /* height: 530px; */
     font-family: serif;
-    font-size: 20px;
+    font-size: 1.6vw;
     text-align: center;
     margin-left: 1%;
     /* background-color: pink; */
@@ -183,6 +183,7 @@ li span{
     margin-top: 20px;
 }
 .shared-box button{
+    font-size: 1vw;
     padding: 10px;
     margin-top: 2px;
     text-align: center;
@@ -216,7 +217,7 @@ li span{
     border: none;
     /* border-radius: 10px; */
     background-color: rgba(255, 0, 0, 0);
-    font-size: 16px;
+    font-size: 1.3vw;
     color: #1e3b7a;
 }
 
@@ -233,7 +234,7 @@ li span{
     position: absolute;
     top: 20%;
     left: 20%;
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-size: 1.5vw;
     /* background-color: #1e3b7a; */
