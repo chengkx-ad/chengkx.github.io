@@ -15,7 +15,7 @@
         </div>  
         <div id="totalcount"></div>
         <div class="wordcount2">
-            <div id="cloudtitle2">单词们的词频<span>词云</span></div>
+            <div id="cloudtitle">单词们的词频<span>词云</span></div>
             <div id="image">
                 <img src="./images/wordcloud.png" 
                 alt="词云图" 
@@ -26,6 +26,80 @@
                 onclick="showLargeImage(this)">
             </div>
         </div>  
+        <!-- 易混词 -->
+        <div id="cloudtitle">那些讨厌的<span>易混词</span></div>
+        <div class="flashcard-container">
+            <div class="flashcard">
+              <h3>compliment</h3>
+              <p>n.致意，问候；赞美，称赞</p>
+              <p>v.赞扬；称赞</p>
+              <h3>complement</h3>
+              <p>v.补充，补足，使完美</p>
+              <p>n.补充物；补足物</p>
+              <h3>implement</h3>
+              <p>v.实施，贯彻，执行；使生效</p>
+              <P>n.工具，器具；户外用具</P>
+              <br>
+              <h3>AI造句助记</h3>
+              <p>当你成功<span>implement</span>了一项计划，你会发现它<span>complements</span>你的整体工作，而你的努力也会得到<span>compliments</span>。</p>
+            </div>
+        
+            <div class="flashcard">
+              <h3>executive</h3>
+              <p>n.经理，主管，行政部门</p>
+              <p>adj.执行的，行政的；高级的</p>
+              <h3>exclusive</h3>
+              <p>adj.独占的；高档的；排斥的</p>
+              <p>adj.不包括...的</p>
+              <p>n.独家新闻，独家报道</p>
+              <h3>excessive</h3>
+              <p>adj.过分的，过多的</p>
+              <br>
+              <h3>AI造句助记</h3>
+              <p>这家俱乐部对于特定的高管和商界精英开放，是一个<span>exclusive</span>的社交圈子。他们在这里能够享受到奢华待遇，符合他们高<span>executive</span>级别的身份，但有时<span>excessive</span>的奢侈也让人担忧。</p>
+            </div>
+        
+            <div class="flashcard">
+              <h3>dissert</h3>
+              <p>v. 详细论述; 深入讨论</p>
+              <h3>desert</h3>
+              <p>v. 抛弃; 擅离职守</p>
+              <p>n. 沙漠</p>
+              <p>adj.荒凉的</p>
+              <h3>dessert</h3>
+              <p>n. 甜点，餐后甜食</p>
+              <br>
+              <h3>AI造句助记</h3>
+              <p>他<span>dissert</span>如何在<span>desert</span>开一家<span>dessert</span>店。</p>
+            </div>
+        
+            <div class="flashcard">
+              <h3>perceptive</h3>
+              <p>adj.洞察力强的；有感知能力的</p>
+              <h3>perspective</h3>
+              <p>n.观点，看法；透视画法</p>
+              <p>adj.透视的，有深度感的</p>
+              <h3>prospective</h3>
+              <p>adj.未来的，预期的；有潜力的</p>
+              <br>
+              <h3>AI造句助记</h3>
+              <p>她对于问题的<span>perspective</span>非常独特，充满了<span>perceptive</span>的见解，这使得她成为我们团队中一个非常有<span>prospective</span>的人选。</p>
+            </div>
+        
+            <div class="flashcard">
+              <h3>elevate</h3>
+              <p>v.提升，提高，抬高</p>
+              <h3>escalate</h3>
+              <p>v.逐步升级，逐步扩大，不断恶化；（战争等）逐渐升级；（价格等）逐步上升</p>
+              <h3>evaluate</h3>
+              <p>v.评估，评价；估值</p>
+              <h3>evacuate</h3>
+              <p>v.疏散，撤离；排泄；清空，排空</p>
+              <br>
+              <h3>AI造句助记</h3>
+              <p>在决策过程中，我们需要<span>evaluate</span>各种方案，并且在必要时<span>evacuate</span>现场，以避免局势<span>escalate</span>到无法控制的地步。我们的目标是要<span>elevate</span>整个团队的安全和效率。</p>
+            </div>
+          </div>
     </div>
     <div class="button">
         <img id="editBtn" src="./images/刷新.png" onclick="resetPage()">
@@ -55,6 +129,7 @@
     <script src="./js/right.js"></script>    
     <script src="./js/left.js"></script>  
     <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
-    <script src="./js/line.js"></script>  
+    <script src="./js/line.js"></script> 
+    <script src="./js/yihun.js"></script> 
 </body>
 </html>
