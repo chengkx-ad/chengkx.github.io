@@ -22,27 +22,17 @@ flashcardContainer.addEventListener('wheel', function (e) {
   }
 });
 
-flashcardContainer.addEventListener('touchstart', function(e) {
-  if (e.target.closest('.flashcard-container') === flashcardContainer) {
-    startY = e.touches[0].clientY;
-  }
-});
+flashcardContainer.addEventListener('click', function (e) {
+  const rect = flashcardContainer.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const containerWidth = rect.width;
 
-flashcardContainer.addEventListener('touchmove', function(e) {
-  if (e.target.closest('.flashcard-container') === flashcardContainer) {
-    const deltaY = e.touches[0].clientY - startY;
-    if (deltaY > 50) {
-      index = (index - 1 + flashcards.length) % flashcards.length;
-      showCard(index);
-      startY = e.touches[0].clientY;
-      e.preventDefault(); 
-    } else if (deltaY < -50) {
-      index = (index + 1) % flashcards.length;
-      showCard(index);
-      startY = e.touches[0].clientY;
-      e.preventDefault(); 
-    }
+  if (clickX < containerWidth / 2) {
+    index = (index - 1 + flashcards.length) % flashcards.length;
+  } else {
+    index = (index + 1) % flashcards.length;
   }
-});
 
+  showCard(index);
+});
 showCard(index);
