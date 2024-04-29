@@ -23,19 +23,25 @@ flashcardContainer.addEventListener('wheel', function (e) {
 });
 
 flashcardContainer.addEventListener('touchstart', function(e) {
-  startY = e.touches[0].clientY;
+  if (e.target.closest('.flashcard-container') === flashcardContainer) {
+    startY = e.touches[0].clientY;
+  }
 });
 
 flashcardContainer.addEventListener('touchmove', function(e) {
-  const deltaY = e.touches[0].clientY - startY;
-  if (deltaY > 50) {
-    index = (index - 1 + flashcards.length) % flashcards.length;
-    showCard(index);
-    startY = e.touches[0].clientY;
-  } else if (deltaY < -50) {
-    index = (index + 1) % flashcards.length;
-    showCard(index);
-    startY = e.touches[0].clientY;
+  if (e.target.closest('.flashcard-container') === flashcardContainer) {
+    const deltaY = e.touches[0].clientY - startY;
+    if (deltaY > 50) {
+      index = (index - 1 + flashcards.length) % flashcards.length;
+      showCard(index);
+      startY = e.touches[0].clientY;
+      e.preventDefault(); 
+    } else if (deltaY < -50) {
+      index = (index + 1) % flashcards.length;
+      showCard(index);
+      startY = e.touches[0].clientY;
+      e.preventDefault(); 
+    }
   }
 });
 
