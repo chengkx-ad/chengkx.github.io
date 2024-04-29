@@ -34,7 +34,7 @@ html, body {
 .container {
     position: relative;
     height: 85vh;
-    width: 500px;
+    width: 35vw;
     background: #f1f5f8;
     /* 背景圆点绘制，每个重复的小方块大小为 ​25px × 25px​ */
     background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
@@ -151,24 +151,24 @@ li:hover {
 /* 右下角的三个爪子 */
 .cute1{
     position: absolute; 
-    bottom: 5px; 
-    right: 70px; 
-    width: 100px;
-    height: 100px;
+    bottom: 1%; 
+    right: 14%; 
+    width: 20%;
+    height: 20%;
 }
 .cute2{
     position: absolute; 
-    bottom: 70px; 
-    right: 5px; 
-    width: 100px;
-    height: 100px;
+    bottom: 14%; 
+    right: 1%; 
+    width: 20%;
+    height: 20%;
 }
 .cute3{
     position: absolute; 
     bottom: 0; 
     right: 0; 
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: 20%;
 }
 /* #endregion代办框end */
 
@@ -176,8 +176,10 @@ li:hover {
 /* 便利贴样式 */
 .stickynote {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 38vh;
+    max-width: 250px;
+    min-width: 90px;
+    aspect-ratio: 1/1;
     box-sizing: border-box;
     padding: 10px;
     transform: rotateX(5deg);
@@ -192,8 +194,9 @@ li:hover {
 .stickynote-text {
     border-radius: 10px;
     color: #686a67;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 400;
+    max-height: 70%;
     border: none;
     background: transparent;
     outline: none;

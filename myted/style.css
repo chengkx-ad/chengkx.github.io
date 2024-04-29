@@ -224,7 +224,6 @@ li span{
     position: relative;
     width: 80%;
     aspect-ratio: 3/4;
-    min-height: 300px;
     margin: 0 auto;
     background-image: url('./images/抽查.jpg');
     display: none;
