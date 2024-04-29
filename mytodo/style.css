@@ -383,6 +383,10 @@ to {
 }
 /* #endregion白噪音 */
 
+.attention{
+    display: none;
+}
+
 /* 手机尺寸 */
 @media (max-width: 600px) {
     html,
@@ -511,20 +515,31 @@ to {
         bottom: 1%; 
         right: 14%; 
         width: 20%;
-        height: 20%;
+        height: 10%;
     }
     .cute2{
         position: absolute; 
-        bottom: 14%; 
+        bottom: 7%; 
         right: 1%; 
         width: 20%;
-        height: 20%;
+        height: 10%;
     }
     .cute3{
         position: absolute; 
         bottom: 0; 
         right: 0; 
         width: 20%;
-        height: 20%;
+        height: 10%;
+    }
+    .attention{
+        display: block;
+        font-size: 2.2vw;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .attention h3{
+        color: brown;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
   }

@@ -257,3 +257,11 @@ li span{
     font-weight: bold;
     background: linear-gradient(to right, #fdd2ae, #def9dc);
 }
+@media (max-width: 600px) {
+    .wordcount{
+        display: none;
+    }
+    .shared-box{
+        margin-top: -5px;
+    }
+}
