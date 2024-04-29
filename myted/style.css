@@ -259,9 +259,9 @@ li span{
 }
 @media (max-width: 600px) {
     .wordcount{
-        display: none;
+        margin-bottom: 6vh;
     }
-    .shared-box{
-        margin-top: -5px;
+    #line{
+        display: none;
     }
 }
