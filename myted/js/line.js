@@ -137,3 +137,7 @@ request.onreadystatechange = function() {
 };
 
 request.send();
+
+window.addEventListener('resize', function() {
+    myChart.resize();
+});
