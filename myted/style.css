@@ -298,11 +298,10 @@ li span{
     }
     #message{
         scale: 0.8;
+        margin-top: -20px;
     }
     #chongxuan{
         top: 100%;
-        left: 40%;
-        width: 6.1vw;
-        height: 1vw;
+        border-radius: 20%;
     }
 }
