@@ -182,12 +182,13 @@ li span{
 }
 .flashcard h3 {
     margin: 0;
+    margin-top: 1.3vw;
     font-size: 1.3vw;
     color: #5698c3;
 }
 .flashcard p {
     font-size: 1.2vw;
-    margin: 5px 0;
+    margin: 1.2px 0;
 }
 .flashcard span{
     font-size: 1.2vw;
@@ -294,5 +295,14 @@ li span{
     }
     #line{
         display: none;
+    }
+    #message{
+        scale: 0.8;
+    }
+    #chongxuan{
+        top: 100%;
+        left: 40%;
+        width: 6.1vw;
+        height: 1vw;
     }
 }

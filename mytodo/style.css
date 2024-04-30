@@ -177,10 +177,8 @@ li:hover {
 /* 便利贴样式 */
 .stickynote {
     position: absolute;
-    width: 38vh;
-    max-width: 250px;
-    min-width: 45px;
-    aspect-ratio: 1/1;
+    width: 200px;
+    height: 200px;
     box-sizing: border-box;
     padding: 10px;
     transform: rotateX(5deg);

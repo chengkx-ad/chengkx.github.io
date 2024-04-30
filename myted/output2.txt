@@ -46,6 +46,7 @@ advance
 advancement
 adventurous
 adversity
+aerobic
 aesthetic
 affection
 affirm
@@ -84,6 +85,8 @@ amity
 amphitheatre
 amplify
 analogy
+analysis
+anatomy
 and so forth
 anemia
 anesthesia
@@ -152,6 +155,7 @@ atrocious
 atrophy
 attachment
 attempt
+attic
 attributable
 audit
 audition
@@ -159,6 +163,7 @@ aurgeon
 authentic
 authenticity
 authority
+automate
 automatic
 automatically
 available
@@ -206,6 +211,7 @@ binding
 binge
 biological
 biologically
+biology
 bitty
 blamethrower
 bleak
@@ -293,6 +299,7 @@ carpenter
 carry around
 cartilage
 carving
+cash-trapped
 casino game
 cast
 casting
@@ -311,6 +318,7 @@ cellular
 cement
 cereal
 cerebral
+certified
 chameleon
 champagne
 championship
@@ -394,6 +402,7 @@ comparison
 compassion
 compassionate demeanor
 compelling
+competence
 competent
 competitive
 compilation
@@ -404,6 +413,7 @@ complementary
 complex
 complexity
 complicated
+complication
 component
 compose
 compound
@@ -508,6 +518,7 @@ crank
 crappy
 crave
 craw
+credential
 credit card
 creepy
 cringe
@@ -647,6 +658,7 @@ discriminate
 discrimination
 disdain
 disenchant
+dismay
 dismiss
 dismissive
 disorder
@@ -751,6 +763,7 @@ emptiness
 emulate
 encapsulate
 encode
+encounter
 endorsement
 endure
 energizing
@@ -770,6 +783,7 @@ entrepreneurial
 entrepreneurial sphere
 entry
 envelop
+envious
 environmental
 enzyme
 epic
@@ -814,6 +828,7 @@ exaggeration
 examine
 exceedingly
 excel
+exception
 excerpt
 excessive
 excessively
@@ -899,6 +914,7 @@ flashback
 flashlight
 flat-lined
 flaw
+flawed
 flawless
 fleeting
 flesh
@@ -923,6 +939,7 @@ footballer
 footprint
 foreclose
 foreclosure
+forehead
 forge ahead
 fork off
 fork over
@@ -941,6 +958,7 @@ freestanding
 frequency
 freshman
 frost
+frustrated
 frustrating
 frustration
 fuel
@@ -1002,6 +1020,7 @@ grace
 gracefully
 grad
 grammar
+grant
 grasp
 gratification
 gravitate
@@ -1118,6 +1137,7 @@ idiosyncratic
 idiot
 ignite
 illusory
+illustrate
 imaginary
 imaginative
 immersion
@@ -1138,11 +1158,13 @@ import
 impose
 impostor
 improvisation
+impulsive
 in context
 in favor of
 in spite of onself
 in the hole
 in the midst of
+inadvertent
 inadvertently
 inaugural
 incessant
@@ -1154,6 +1176,7 @@ inconsiderately
 inconvenience
 incredible
 incredibly
+incurable
 indicate
 indict
 individual
@@ -1276,6 +1299,7 @@ jewelry
 jittery
 joint
 jot down
+journalism
 journey
 juggle
 junior
@@ -1283,6 +1307,7 @@ justify
 keepsake
 kick mu ass
 kick off
+kickbox
 kickboxing
 kickstart
 kidnap
@@ -1344,6 +1369,7 @@ liver
 lobby
 locust
 logistic
+long-lasting
 long-term memory
 longtime
 loop
@@ -1365,6 +1391,7 @@ magnetic
 magnificent
 magnified
 mainstream
+make ends meet
 make one's mark
 make sth the norm
 make-or-break
@@ -1472,6 +1499,7 @@ monitor
 monk
 monogamomus
 monogamy
+monopoly
 monotone
 monotonic
 monotonous
@@ -1520,11 +1548,13 @@ net revenue
 net underneath
 neural
 neural network
+neural science
 neurochemically
 neurofeedback
 neuron
 neuroplasticity
 neuroscience
+neuroscientist
 neurotransmitter
 niceness
 niche
@@ -1560,6 +1590,7 @@ obsessed with
 obsessive
 obstacle
 occation
+occupation
 octogenarian
 oddly
 odds
@@ -1576,6 +1607,7 @@ oppression
 optimal
 optimistic
 optimization
+optimum
 orator
 organic
 organism
@@ -1635,6 +1667,7 @@ patchwork
 pathetic
 patriarchy
 pay off
+pedigree
 penultimate
 per se
 perceive
@@ -1665,6 +1698,7 @@ philosophy
 phobia
 phoenix
 photography
+photosynthesis
 phrase
 phrasebook
 physically
@@ -1708,9 +1742,11 @@ porch
 porn
 portable
 portal
+portfolio
 positive psychology
 post-millennial
 potential
+power-vacuuming
 powerfully
 powerhouse
 powerlessness
@@ -1726,6 +1762,7 @@ preliminary round
 premature
 prematurely
 prescribe
+prescription
 presence
 present-hedonistic
 presentation
@@ -1787,6 +1824,7 @@ pull back
 pull on
 pull out
 pulp
+punch
 punchline
 purge
 purposeless
@@ -1916,9 +1954,11 @@ restlessness
 restorative
 restrict
 restructuring
+resume
 resurrect
 resurrection
 resuscitation
+retain
 retention
 retire
 retirement
@@ -1974,6 +2014,7 @@ sake
 saliva sample
 salivate
 salvation
+sample
 sanctuary
 sane
 sanity
@@ -2005,6 +2046,7 @@ scroll up
 scrub
 sculpture
 secondary
+sector
 securely
 sedentary
 sediment
@@ -2203,6 +2245,7 @@ stimulate
 stimulation
 stimuli
 stinky
+stint
 stitch
 stock
 stoic
@@ -2260,12 +2303,14 @@ suppress
 surgery
 surgical
 surrender
+susceptible
 suspect
 suspend
 sustain
 swank
 swap
 sweat
+sweat-inducing
 sweeping
 sweet spot
 swell
@@ -2308,6 +2353,7 @@ temper with
 temperature
 temple
 temporal
+temporal lobe
 temporarily
 temporary
 tempt
@@ -2340,6 +2386,7 @@ throat
 throne
 throughout
 throw in the towel on
+thumb
 thyroid
 tidily
 tightness
@@ -2374,11 +2421,13 @@ trade
 traditionally
 tragedy
 tragic
+trajectory
 transaction
 transcendence
 transcendental
 transcribe
 transformative
+transient
 transition
 translation
 transmission
@@ -2425,6 +2474,7 @@ uncoordinated
 undeniably
 under the same roof
 under-employed
+underestimate
 undergo
 underlying
 underneath my belt
@@ -2461,6 +2511,7 @@ unthinkable
 untimely
 unwavering
 uplift
+uppercut
 uproot
 ups and downs
 upscale
