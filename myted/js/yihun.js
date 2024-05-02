@@ -13,14 +13,14 @@ function showCard(index) {
   });
 }
 
-flashcardContainer.addEventListener('wheel', function (e) {
-  if (e.target.closest('.flashcard-container') === flashcardContainer) {
-    const deltaY = e.deltaY > 0 ? 1 : -1;
-    index = (index + deltaY + flashcards.length) % flashcards.length;
-    showCard(index);
-    e.preventDefault();
-  }
-});
+// flashcardContainer.addEventListener('wheel', function (e) {
+//   if (e.target.closest('.flashcard-container') === flashcardContainer) {
+//     const deltaY = e.deltaY > 0 ? 1 : -1;
+//     index = (index + deltaY + flashcards.length) % flashcards.length;
+//     showCard(index);
+//     e.preventDefault();
+//   }
+// });
 
 flashcardContainer.addEventListener('click', function (e) {
   const rect = flashcardContainer.getBoundingClientRect();

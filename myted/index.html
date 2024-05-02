@@ -27,10 +27,26 @@
                 onclick="showLargeImage(this)">
             </div>
         </div>  
+        <!-- 打卡号 -->
+        <div id="cloudtitle">TED打卡号<span>分类查询</span></div>
+        <p style="font-size: 0.9vw; color: #575656;">查询到对应的打卡号，可自行查找对应TED资源，<br>也欢迎光临小红书号<span style="color: #ecbc41; font-size: 1vw;">3884751039</span>。</p>
+        <div class="mainbox">
+            <div id="categorycontainer">
+                <select id="categorySelect" onchange="showTED()">
+                    <option value="">ALL（可自选分类按需查询哦~）</option>
+                    <option value="个人成长">个人成长</option>
+                    <option value="心理调节">心理调节</option>
+                    <option value="生活方式与习惯">生活方式与习惯</option>
+                    <option value="健康与健身">健康与健身</option>
+                    <option value="社交与关系">社交与关系</option>
+                </select>
+                <ul id="TEDList"></ul>
+            </div>
+        </div>
         <!-- 易混词 -->
         <div id="cloudtitle">那些讨厌的<span>易混词</span></div>
         <p style="font-size: 0.9vw; color: #575656;">点击<span style="color: #ecbc41; font-size: 1vw;">左</span>半部分<span style="color: #ecbc41; font-size: 1vw;">上</span>翻，点击<span style="color: #ecbc41; font-size: 1vw;">右</span>半部分<span style="color: #ecbc41; font-size: 1vw;">下</span>翻。</p>
-        <p style="font-size: 0.9vw; color: #575656;">也可使用<span style="color: #ecbc41; font-size: 1vw;">鼠标滚轮</span>。</p>
+        <!-- <p style="font-size: 0.9vw; color: #575656;">也可使用<span style="color: #ecbc41; font-size: 1vw;">鼠标滚轮</span>。</p> -->
         <div class="flashcard-container">
             <div class="flashcard">
               <h3>compliment</h3>
@@ -128,11 +144,13 @@
             </div>
         </div>
     </div>
+    
     <script src="./js/center.js"></script>
     <script src="./js/right.js"></script>    
     <script src="./js/left.js"></script>  
     <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
     <script src="./js/line.js"></script> 
     <script src="./js/yihun.js"></script> 
+    <script src="./js/TED打卡号.js"></script>
 </body>
 </html>

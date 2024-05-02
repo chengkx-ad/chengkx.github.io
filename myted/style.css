@@ -124,7 +124,7 @@ li span{
 /* 词云图 */
 #cloudtitle{
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 #cloudtitle span{
@@ -253,6 +253,7 @@ li span{
     color: #1e3b7a;
 }
 
+/* 抽查部分 */
 #flag {
     position: relative;
     width: 80%;
@@ -289,6 +290,57 @@ li span{
     font-weight: bold;
     background: linear-gradient(to right, #fdd2ae, #def9dc);
 }
+
+/* TED打卡号部分 */
+.mainbox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#categorycontainer select {
+    font-family: 'serif';
+    margin: 0 auto;
+    width: 90%;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.1vw;
+    background-color: azure;
+    border: 3px solid #1e80b8bb;
+    border-radius: 8px; 
+}
+
+#categorycontainer ul {
+    font-family: 'serif';
+    width: 100%;
+    font-size: 1vw;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+}
+#categorycontainer li {
+    font-family: 'serif';
+    font-size: 1vw;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#categorycontainer .tedtext{
+    font-family: 'serif';
+    font-size: 1vw;
+    font-weight: normal;
+    color: #333;
+}
+
+#categorycontainer .tednum{
+    font-family: 'serif';
+    font-size: 1vw;
+    color: #2966cf;
+}
+
+/* 页面适配 */
 @media (max-width: 600px) {
     .wordcount{
         margin-bottom: 6vh;
