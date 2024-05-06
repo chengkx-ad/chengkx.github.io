@@ -401,7 +401,7 @@ to {
     }
     /* 依旧显示的部分，适当更改样式 */
     .container {
-      height: 80vh;
+      height: 70vh;
       width: 90%;
       margin: 0 auto; 
     }
