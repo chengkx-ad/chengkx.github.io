@@ -6,7 +6,7 @@ import re
 
 def count_word_frequency(input_file, output_txt_file, output_word_json_file, output_txt_file_sorted, output_word_count_txt):
     word_count = defaultdict(int)
-    word_numbers = defaultdict(set)  # 使用集合存储单词的编号
+    word_numbers = defaultdict(set)  
     word_appearances = defaultdict(set)
     current_number = 0
 
@@ -25,10 +25,9 @@ def count_word_frequency(input_file, output_txt_file, output_word_json_file, out
                 with open(output_word_count_txt, 'a') as count_file:
                     count_file.write(f"{current_number-1} {current_unique_count}\n")
 
-            if number not in word_numbers[word]:  # 如果该编号不存在于单词的编号集合中，则更新频率和添加编号
+            if number not in word_numbers[word]:  
                 word_count[word] += 1
-                word_numbers[word].add(number)  # 使用集合存储单词的编号，并自动去重
-                # word_numbers[word] = sorted(word_numbers[word])
+                word_numbers[word].add(number)  
             word_appearances[word].add(number)
     
     for word in word_numbers:
@@ -49,7 +48,7 @@ def count_word_frequency(input_file, output_txt_file, output_word_json_file, out
         word_entry = {
             "word": word,
             "count": count,
-            "numbers": list(word_numbers[word])  # 将集合转换为列表
+            "numbers": list(word_numbers[word])  
         }
         word_data.append(word_entry)
 

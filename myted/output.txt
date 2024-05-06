@@ -1,16 +1,17 @@
-individual 9
+individual 10
 literally 8
 trigger 8
 commitment 7
 feedback 6
 mechanism 6
 resilient 6
+slightly 6
 vulnerable 6
 circumstance 5
+demonstrate 5
 diabetes 5
 essential 5
 essentially 5
-slightly 5
 stigma 5
 ultimately 5
 alert 4
@@ -18,7 +19,6 @@ automatically 4
 cognitive 4
 combination 4
 concept 4
-demonstrate 4
 detect 4
 discipline 4
 disorder 4
@@ -26,6 +26,7 @@ dramatically 4
 enormous 4
 episode 4
 executive 4
+fantastic 4
 gorgeous 4
 initially 4
 investigate 4
@@ -39,6 +40,7 @@ psychologist 4
 reveal 4
 ridiculous 4
 spiral 4
+strategy 4
 a bunch of 3
 accommodate 3
 alternative 3
@@ -70,7 +72,6 @@ embarrassed 3
 erode 3
 excessive 3
 exhaustive 3
-fantastic 3
 furious 3
 growth mindset 3
 hippocampus 3
@@ -78,6 +79,7 @@ hook up 3
 hypothesis 3
 immigrant 3
 immune 3
+incredibly 3
 insane 3
 intensity 3
 interaction 3
@@ -107,8 +109,8 @@ scenario 3
 self-esteem 3
 serotonin 3
 stake 3
-strategy 3
 tap into 3
+temptation 3
 therapist 3
 therapy 3
 threshold 3
@@ -117,6 +119,7 @@ toxic 3
 track 3
 twist 3
 underlying 3
+withdrawal 3
 abuse 2
 abusive 2
 activate 2
@@ -142,6 +145,7 @@ authenticity 2
 authority 2
 awkward 2
 baseline 2
+basically 2
 benign 2
 bias 2
 biased 2
@@ -159,6 +163,8 @@ capital 2
 captivity 2
 carbohydrate 2
 catastrophic 2
+ceiling 2
+chapter 2
 chemotherapy 2
 chronic 2
 chronology 2
@@ -224,11 +230,13 @@ endure 2
 enthusiasm 2
 exaggeration 2
 excel 2
+exception 2
 exclude 2
 exhausting 2
 existential 2
 extent 2
 external 2
+extraordinary 2
 factor 2
 filter 2
 flaw 2
@@ -254,6 +262,7 @@ hilarious 2
 holistic 2
 hormonal 2
 hormone 2
+humanity 2
 humble 2
 hustle 2
 imaginary 2
@@ -261,7 +270,6 @@ imperfection 2
 implication 2
 impose 2
 incredible 2
-incredibly 2
 indulge 2
 inevitable 2
 inflammation 2
@@ -277,6 +285,7 @@ instinct 2
 insulin 2
 intangible 2
 intense 2
+interrupt 2
 intervention 2
 intuition 2
 iron 2
@@ -293,6 +302,7 @@ loop 2
 magnet 2
 marathon 2
 marshmallow 2
+massive 2
 masterpiece 2
 maze 2
 meditate 2
@@ -358,6 +368,7 @@ regulate 2
 rehearse 2
 reinforce 2
 reject 2
+relationship 2
 remarkable 2
 renowned 2
 resilience 2
@@ -366,8 +377,10 @@ respectively 2
 restlessness 2
 revise 2
 rig up 2
+rob 2
 romantic 2
 rookie 2
+sacred 2
 sacrifice 2
 sake 2
 sanity 2
@@ -407,7 +420,6 @@ tape 2
 technically 2
 technique 2
 temporarily 2
-temptation 2
 tension 2
 thread 2
 tissue 2
@@ -420,6 +432,7 @@ traumatic 2
 traumatize 2
 trick 2
 tumor 2
+turn out 2
 undo 2
 unfold 2
 universal 2
@@ -434,12 +447,12 @@ wardrobe 2
 weapon 2
 whereas 2
 willpower 2
-withdrawal 2
 worship 2
 Merriam-Webster diction 1
 a fine line 1
 a needle in a haystack 1
 a neural network 1
+a sort of 1
 a spectator sport 1
 a state of 1
 a string of 1
@@ -452,6 +465,7 @@ abstinence 1
 abstractly 1
 absurb 1
 abundant 1
+accelerator 1
 acceptable 1
 acclaim 1
 acclimate 1
@@ -559,6 +573,7 @@ associate 1
 assumption 1
 astounded 1
 at any given time 1
+at large 1
 at odds 1
 at stake 1
 at table 1
@@ -575,6 +590,7 @@ aurgeon 1
 automate 1
 automatic 1
 available 1
+average 1
 aversive 1
 awe 1
 awful 1
@@ -592,7 +608,6 @@ banshee 1
 barely 1
 barometric 1
 bartender 1
-bascially 1
 be diagnosed with 1
 be immune to sth 1
 be obsessed with 1
@@ -700,7 +715,6 @@ cathartic 1
 cautious 1
 cavity 1
 cede 1
-ceiling 1
 celebrate 1
 cellular 1
 cement 1
@@ -710,7 +724,6 @@ chameleon 1
 champagne 1
 championship 1
 chaos 1
-chapter 1
 characteristic 1
 check up 1
 chemical 1
@@ -869,6 +882,7 @@ crunchy 1
 crushing 1
 crystal 1
 cuddly 1
+cue 1
 culinary 1
 culminate 1
 curate 1
@@ -1060,13 +1074,16 @@ encode 1
 encounter 1
 endorsement 1
 energizing 1
+engage in 1
 engagement 1
 engaging 1
 enhance 1
 enjoyable 1
+enriching 1
 ensnare 1
 ensue 1
 entailment 1
+entertainment 1
 enthusiastic 1
 enthusiastically 1
 entrant 1
@@ -1112,8 +1129,8 @@ ex-con 1
 exaggerate 1
 exaggerated 1
 examine 1
+exccs 1
 exceedingly 1
-exception 1
 excerpt 1
 excessively 1
 exclusive 1
@@ -1132,7 +1149,6 @@ exploratory 1
 exponential 1
 extended 1
 extraneous 1
-extraordinary 1
 extremism 1
 extricate 1
 exuberance 1
@@ -1350,7 +1366,6 @@ hostage 1
 household 1
 housewares 1
 huddle 1
-humanity 1
 humiliate 1
 humiliating 1
 humiliation 1
@@ -1463,7 +1478,6 @@ intergalactic 1
 intermittent 1
 internship 1
 interpretation 1
-interrupt 1
 intersperse 1
 intervene 1
 intestine 1
@@ -1604,7 +1618,6 @@ marriage 1
 marshal 1
 masculine 1
 massage 1
-massive 1
 match 1
 material 1
 mathematics 1
@@ -1650,6 +1663,7 @@ millenium 1
 millennial 1
 mindfully 1
 minimal 1
+miraculous 1
 mirror 1
 miserably 1
 misfit 1
@@ -1780,6 +1794,7 @@ outrageous 1
 outset 1
 outwork 1
 overall 1
+overcome 1
 overconsumption 1
 overdrive 1
 overestimate 1
@@ -1813,7 +1828,9 @@ patchwork 1
 pathetic 1
 patriarchy 1
 pay off 1
+pedal 1
 pedigree 1
+peninsula 1
 penultimate 1
 per se 1
 percentage 1
@@ -1924,6 +1941,7 @@ profitable 1
 profoundly 1
 prohibitive 1
 promote 1
+prompt 1
 propel 1
 prophecy 1
 proposal 1
@@ -1938,6 +1956,7 @@ provide 1
 psychiatric 1
 psycho 1
 psychological 1
+psychology 1
 pull away 1
 pull back 1
 pull on 1
@@ -2017,7 +2036,6 @@ reinvent 1
 reinvention 1
 rejection 1
 rekindle 1
-relationship 1
 relatively 1
 relentless 1
 relevant 1
@@ -2069,10 +2087,10 @@ revv up 1
 reward system 1
 rhythm 1
 riffraff 1
+rig 1
 rigor 1
 rinse 1
 ritual 1
-rob 1
 robbery 1
 robust 1
 roll 1
@@ -2089,13 +2107,13 @@ rubber 1
 rule out 1
 rumination 1
 rummage 1
+rumor 1
 run in one's family 1
 run off the rails 1
 rush after 1
 rut 1
 ruthlessly 1
 sabotage 1
-sacred 1
 safeguard 1
 saliva sample 1
 salivate 1
@@ -2167,6 +2185,7 @@ shake off 1
 shame 1
 shape 1
 shareable 1
+shareholder 1
 shatter 1
 shepherd 1
 shield 1
@@ -2273,6 +2292,7 @@ stab 1
 stack 1
 stack up 1
 stadium 1
+staggered 1
 stagnation 1
 staircase 1
 stairway 1
@@ -2475,7 +2495,6 @@ trustworthy 1
 tubular 1
 tumble off 1
 turbulent 1
-turn out 1
 tweak 1
 twentysomething 1
 typhoon 1
@@ -2588,6 +2607,7 @@ whiff 1
 whiskey 1
 whistle-blower 1
 whopping 1
+widespread 1
 wild goose chase 1
 wildfire 1
 willfully 1
@@ -2608,3 +2628,4 @@ yoga 1
 zany 1
 zealously 1
 zombie 1
+zoom back 1

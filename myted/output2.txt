@@ -3,6 +3,7 @@ a bunch of
 a fine line
 a needle in a haystack
 a neural network
+a sort of
 a spectator sport
 a state of
 a string of
@@ -17,6 +18,7 @@ absurb
 abundant
 abuse
 abusive
+accelerator
 acceptable
 acclaim
 acclimate
@@ -146,6 +148,7 @@ association
 assumption
 astounded
 at any given time
+at large
 at odds
 at stake
 at table
@@ -167,6 +170,7 @@ automate
 automatic
 automatically
 available
+average
 aversive
 awe
 awesome
@@ -186,8 +190,8 @@ banshee
 barely
 barometric
 bartender
-bascially
 baseline
+basically
 be diagnosed with
 be immune to sth
 be obsessed with
@@ -532,6 +536,7 @@ crunchy
 crushing
 crystal
 cuddly
+cue
 culinary
 culminate
 cultivate
@@ -767,14 +772,17 @@ encounter
 endorsement
 endure
 energizing
+engage in
 engagement
 engaging
 enhance
 enjoyable
 enormous
+enriching
 ensnare
 ensue
 entailment
+entertainment
 enthusiasm
 enthusiastic
 enthusiastically
@@ -826,6 +834,7 @@ exaggerate
 exaggerated
 exaggeration
 examine
+exccs
 exceedingly
 excel
 exception
@@ -1476,6 +1485,7 @@ mindfulness
 mindset
 minimal
 miracle
+miraculous
 miraculously
 mirror
 misconception
@@ -1628,6 +1638,7 @@ outrageous
 outset
 outwork
 overall
+overcome
 overconsumption
 overdrive
 overestimate
@@ -1667,7 +1678,9 @@ patchwork
 pathetic
 patriarchy
 pay off
+pedal
 pedigree
+peninsula
 penultimate
 per se
 perceive
@@ -1801,6 +1814,7 @@ prohibitive
 prominent
 promote
 promotion
+prompt
 propagate
 propel
 prophecy
@@ -1818,6 +1832,7 @@ psychiatric
 psycho
 psychological
 psychologist
+psychology
 psychotherapy
 pull away
 pull back
@@ -1978,6 +1993,7 @@ reward system
 rhythm
 ridiculous
 riffraff
+rig
 rig up
 rigor
 rinse
@@ -2001,6 +2017,7 @@ rubber
 rule out
 rumination
 rummage
+rumor
 run in one's family
 run off the rails
 rush after
@@ -2090,6 +2107,7 @@ shake off
 shame
 shape
 shareable
+shareholder
 shatter
 shepherd
 shield
@@ -2206,6 +2224,7 @@ stab
 stack
 stack up
 stadium
+staggered
 stagnation
 staircase
 stairway
@@ -2585,6 +2604,7 @@ whiff
 whiskey
 whistle-blower
 whopping
+widespread
 wild goose chase
 wildfire
 willfully
@@ -2608,3 +2628,4 @@ yoga
 zany
 zealously
 zombie
+zoom back
