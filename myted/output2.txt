@@ -20,6 +20,7 @@ abuse
 abusive
 accelerator
 acceptable
+acceptance
 acclaim
 acclimate
 acclimatization
@@ -39,6 +40,7 @@ address
 adequate
 adherent
 admiration
+admission
 admittedly
 adolescence
 adolescent
@@ -56,6 +58,8 @@ affliction
 affluent
 afterward
 aggressive
+agile
+agility
 agitate
 agriculture
 airplanes
@@ -85,6 +89,7 @@ amend
 amino acid
 amity
 amphitheatre
+amplification
 amplify
 analogy
 analysis
@@ -106,6 +111,7 @@ anticipate
 anticipated
 antidote
 antique
+apartheid
 apathy
 apologize
 appearently
@@ -164,6 +170,7 @@ audit
 audition
 aurgeon
 authentic
+authentically
 authenticity
 authority
 automate
@@ -256,9 +263,12 @@ breed
 bricklayer
 bridge
 brilliant
+bring to its knees
 broadcast
 broaden
 bronze
+brood
+brood on
 brunt
 brutal
 budget
@@ -284,6 +294,7 @@ call the acount
 candidate
 canoeing
 capable
+capacity
 capillary
 capital
 capitalism
@@ -314,6 +325,7 @@ catchy
 category
 cathartic
 cautious
+caveat
 cavity
 cede
 ceiling
@@ -480,12 +492,14 @@ contented
 context
 context-dependent
 continuation
+contour
 contouring
 contract
 contraction
 contrast
 contribute
 contributing
+contributor
 controversial
 conventional
 conventional wisdom
@@ -500,6 +514,7 @@ cornerstone
 corporation
 correlate
 correspond
+correspondence
 cortex
 cortical
 cosmetics
@@ -524,8 +539,10 @@ crave
 craw
 credential
 credit card
+creditor
 creepy
 cringe
+critical
 critical period
 crop up
 crowd-sourcing
@@ -555,6 +572,7 @@ daydream
 deactivate
 dead center
 deadly
+deal with
 decent
 deceptively
 decimal
@@ -589,6 +607,7 @@ demolish
 demon
 demonstrate
 demoralize
+denial
 dense
 deny
 deoxygenate
@@ -663,6 +682,7 @@ discriminate
 discrimination
 disdain
 disenchant
+dismantle
 dismay
 dismiss
 dismissive
@@ -712,6 +732,7 @@ dranining
 dread
 dreadful
 dredge
+drift
 drift off
 drift off into
 driveway
@@ -757,6 +778,7 @@ emergency
 emerging
 emission
 emotion regulation
+emotional agility
 emotional intelligence
 emotionally
 empathetic
@@ -769,6 +791,7 @@ emulate
 encapsulate
 encode
 encounter
+endorse
 endorsement
 endure
 energizing
@@ -914,12 +937,14 @@ finite
 firmly
 fit in
 fix
+fix sb with eyes
 fixate
 fixation
 fixed-mindset
 flash
 flash card
 flashback
+flashing
 flashlight
 flat-lined
 flaw
@@ -958,10 +983,14 @@ formulate
 fortify
 foster
 fracture
+fragile
+fragility
+frailty
 frame
 framework
 frankly
 fraud
+fraught
 fray
 freestanding
 frequency
@@ -1037,6 +1066,8 @@ gravity
 graze
 greedy
 grief
+grieve
+grieving
 grievous
 grim
 grip
@@ -1060,6 +1091,7 @@ hack
 haikus
 hail
 hallmark
+hallowed
 hallucinate
 hallucination
 handmade
@@ -1102,6 +1134,7 @@ hold up
 holistic
 hometown
 honor
+hook
 hook on
 hook up
 hoops
@@ -1189,6 +1222,7 @@ incurable
 indicate
 indict
 individual
+individualized
 indulge
 indulge in
 indulgence
@@ -1227,6 +1261,7 @@ insanely
 insanity
 insecure
 insecurity
+inseparable
 insidious
 insight
 insight into
@@ -1281,6 +1316,7 @@ intuition
 intuitive
 intuitively
 invaluable
+invent
 inventory
 inversely
 investigate
@@ -1341,6 +1377,7 @@ lean over
 legacy
 legal
 legions of
+legislation
 legitimate
 legitimize
 leisure time
@@ -1376,6 +1413,7 @@ literature
 livelihood
 liver
 lobby
+lock down
 locust
 logistic
 long-lasting
@@ -1536,6 +1574,7 @@ mutation
 mutter
 myriad
 myth
+nag
 namely
 nap
 narrative
@@ -1583,6 +1622,7 @@ norm
 nostalgia
 notebook
 nugget
+numb
 numb idiot
 numbness
 numerous
@@ -1598,6 +1638,7 @@ observe
 obsessed
 obsessed with
 obsessive
+obsessively
 obstacle
 occation
 occupation
@@ -1613,6 +1654,7 @@ on the intellectual level
 on the spot
 on the verge of
 ontological
+openness
 oppression
 optimal
 optimistic
@@ -1636,6 +1678,7 @@ outlet
 outperform
 outrageous
 outset
+outstrip
 outwork
 overall
 overcome
@@ -1859,11 +1902,13 @@ race
 racial
 racially
 racism
+racist
 rack
 rack up
 radiance
 radiate
 radical
+rage
 raid
 rally
 randomly
@@ -1877,9 +1922,11 @@ ration
 rational
 rationale
 rationality
+ravage
 rave
 raw
 reactive
+readiness
 real-estate
 realm
 reap
@@ -1995,6 +2042,8 @@ ridiculous
 riffraff
 rig
 rig up
+rigid
+rigidity
 rigor
 rinse
 ritual
@@ -2119,6 +2168,7 @@ shove
 shriek
 shrine
 shrink
+shrug
 shut out
 sibling
 side projects
@@ -2127,6 +2177,7 @@ sign out
 sign-up rates
 signature
 significantly
+signpost
 silence sb ego
 silly
 similarity
@@ -2160,6 +2211,7 @@ slightly
 sling
 slings and arrows
 slip
+slip from
 slit
 slouch
 slouchy
@@ -2305,6 +2357,7 @@ substantial
 substitute
 substitution
 subtract
+suburb
 suck it up
 suffocate
 sugarcoat
@@ -2319,6 +2372,7 @@ supervisor
 supply
 supposedly
 suppress
+suppression
 surgery
 surgical
 surrender
@@ -2326,6 +2380,8 @@ susceptible
 suspect
 suspend
 sustain
+sustainable
+sustainably
 swank
 swap
 sweat
@@ -2379,6 +2435,7 @@ tempt
 temptation
 tenacious
 tendency
+tender
 tenement
 tenet
 tension
@@ -2401,6 +2458,7 @@ thread
 threatened
 threshold
 thrive
+thriving
 throat
 throne
 throughout
@@ -2519,13 +2577,16 @@ unleavened
 unlink
 unmoor
 unpack
+unprecedented
 unrelated
+unreserved
 unsetting
 unsolicited
 unsophisticated
 unspeakable
 unstuck
 unsurprisingly
+unsustainable
 unthinkable
 untimely
 unwavering
@@ -2545,6 +2606,7 @@ vaccine-preventable
 validate
 validation
 valley
+values-aligned
 vantage
 variable
 variation
@@ -2562,6 +2624,7 @@ versus
 vessel
 viable
 vicious
+victimized
 videotape
 vindicate
 vindication
@@ -2602,6 +2665,7 @@ well-found
 whereas
 whiff
 whiskey
+whisper
 whistle-blower
 whopping
 widespread
