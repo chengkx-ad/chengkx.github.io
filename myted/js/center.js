@@ -1,11 +1,11 @@
-// 页面加载时显示初始效果
-function showInitialEffect() {
+// 页面加载时显示初始效果（默认按词频降序排序）
+function FirstShow() {
     fetch('./output_word.json')
         .then(response => response.json())
         .then(data => {
+            // 按词频排序
             const initialData = data.sort((a, b) => b.count - a.count);
             displayWords(initialData);
-            displayResult(getMultiWordFrequency(data));
         })
         .catch(err => console.error('Error loading JSON file: ', err));
 }
@@ -14,20 +14,19 @@ function showInitialEffect() {
 document.getElementById('searchInput').addEventListener('input', function() {
     const searchInput = this.value.trim().toLowerCase();
     if (searchInput === '') {
-        showInitialEffect(); // 若搜索框中无内容，则显示初始效果
+        FirstShow(); // 若搜索框中无内容，则显示初始效果
     } else {
-        searchWordsAndDisplay(searchInput);
+        SearchWords(searchInput);
     }
 });
 
 // 根据搜索词汇重新显示单词
-function searchWordsAndDisplay(searchInput) {
+function SearchWords(searchInput) {
     fetch('./output_word.json')
         .then(response => response.json())
         .then(data => {
             const filteredData = data.filter(item => item.word.toLowerCase().includes(searchInput));
             displayWords(filteredData);
-            displayResult(getMultiWordFrequency(filteredData));
         })
         .catch(err => console.error('Error loading JSON file: ', err));
 }
@@ -43,32 +42,12 @@ function displayWords(data) {
     });
 }
 
-// 显示多个单词的频率
-function displayResult(words) {
-    // 清除之前的结果
-    itemList.innerHTML = '';
-    const resultList = document.getElementById('itemList');
-    words.forEach(word => {
-        const listItem = document.createElement('li');
-        listItem.textContent = word;
-        resultList.appendChild(listItem);
-    });
-
-    itemList.appendChild(resultList);
-}
-
-// 获取多个单词的频率
-function getMultiWordFrequency(data) {
-    return data.filter(word => word.word.split(" ").length > 1)
-        .map(word => word.word)
-        .sort((a, b) => a.localeCompare(b));
-}
-
 // 页面加载时显示初始效果
 window.addEventListener('load', function() {
-    showInitialEffect();
+    FirstShow();
 });
 
+// 刷新
 function resetPage() {
     location.reload();
 }

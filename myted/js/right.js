@@ -104,3 +104,7 @@ fetch('./output_word.json')
     .catch(error => {
         console.error('加载 JSON 文件出错：', error);
     });
+    
+window.addEventListener('load', function() {
+    phraseBtn.click();
+});
