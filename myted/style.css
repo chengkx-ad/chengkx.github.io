@@ -352,7 +352,7 @@ li span{
     .wordcount{
         margin-bottom: 6vh;
     }
-    #line{
+    #line,.search-btn,#editBtn{
         display: none;
     }
     #message{
