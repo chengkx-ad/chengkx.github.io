@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 左边 -->
     <div class="count">
         <div class="wordcount">
             <div id="cloudtitle">咱就是说，<span>成就感拉满</span>！</div>
@@ -158,20 +159,39 @@
                 <h3>AI造句助记</h3>
                 <p>他们需要<span>elaborate</span>的计划，以便能够<span>collaborate</span>顺利，并且有足够的证据来<span>corroborate</span>他们的计划确切可行。</p>
             </div>
+
+            <div class="flashcard">
+                <h3>confess</h3>
+                <p>v.坦白，供认</p>
+                <p>v.忏悔</p>
+                <h3>congress</h3>
+                <p>n.国会</p>
+                <p>n.代表大会，会议</p>
+                <h3>compress</h3>
+                <p>v.压缩，浓缩</p>
+                <p>n.紧缩</p>
+                <br>
+                <h3>AI造句助记</h3>
+                <p>他最终不得不<span>confess</span>了自己的罪行，在国际<span>congress</span>上他公开承认了错误。为了节省空间，他需要<span>compress</span>所有的数据，在这场会议上只能说重点。</p>
+               </div>
+            </div>
+    </div>
+    <!-- 中间 -->
+    <div class="center">
+        <div class="button">
+            <img id="editBtn" src="./images/刷新.png" onclick="resetPage()">
         </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-txt" oninput="searchWord()" placeholder="Search for word..." />
+            <a class="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="show-box">
+            <ul id="searchList"></ul>
+        </div>  
     </div>
-    <div class="button">
-        <img id="editBtn" src="./images/刷新.png" onclick="resetPage()">
-    </div>
-    <div class="search-box">
-        <input type="text" id="searchInput" class="search-txt" oninput="searchWord()" placeholder="Search for word..." />
-        <a class="search-btn">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="show-box">
-        <ul id="searchList"></ul>
-    </div>  
+    <!-- 右边 -->
     <div class="right"> 
         <div class="shared-box">
             <button id="phraseBtn">短语合集</button>
