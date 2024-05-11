@@ -63,8 +63,6 @@ li span{
     font: 15px sans-serif;
     line-height: 30px;
     width: 0;
-    /* 动画过渡 */
-    transition: 0.4s;
 }
 .search-txt::placeholder{
     color: #ffffff67;
@@ -82,8 +80,6 @@ li span{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* 动画过渡 */
-    transition: 0.4s;
 }
 .search-box .search-txt{
     width: 80%;
