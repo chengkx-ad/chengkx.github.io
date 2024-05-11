@@ -385,7 +385,7 @@ to {
 }
 
 /* 手机尺寸 */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     html,
     body {
       display: block;
